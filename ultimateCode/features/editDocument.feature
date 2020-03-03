@@ -9,5 +9,5 @@ Background: a new document has been created
 	Given I am on UltimateCode edit page
 
 Scenario: edit the document
-	When I type something: "Hello, world!"
-	Then I should see what I typed in the textarea: "Hello, world!"
+	When I type "Hello, world!"
+	Then I should see "Hello, world!" in the "textarea"
