@@ -9,5 +9,5 @@ Background: a new document has been created
 	Given I am on UltimateCode edit page
 
 Scenario: edit the document
-	When I type "Hello, world!"
-	Then the "textarea" field should contain "Hello, world!"
+	When I type Hello, world!
+	Then the "the_input" field should contain "Hello, world!"
