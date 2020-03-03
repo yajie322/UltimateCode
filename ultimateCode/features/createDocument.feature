@@ -12,4 +12,5 @@ Background: Home page is successfully loaded
 
 Scenario: create a new document by clicking "New"
 	When I press "New"
-	Then I should see "textarea", "iframe", "select"
+	Then I should go to UltimateCode edit page
+	And I should see "textarea", "iframe", "select"
