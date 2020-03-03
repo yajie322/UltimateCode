@@ -6,7 +6,7 @@ Feature: edit the document
 
 Background: a new document has been created
 
-	Given the editor interface is shown
+	Given I am on UltimateCode edit page
 
 Scenario: edit the document
 	When I type something: "Hello, world!"
