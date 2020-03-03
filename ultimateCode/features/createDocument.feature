@@ -6,7 +6,7 @@ Feature: create a new document
 
 Background: Home page is successfully loaded
 
-	Given I am on UltimateCode home page
+	Given I am on "UltimateCode_home_page"
 	Then I should see button: "New"
 
 
