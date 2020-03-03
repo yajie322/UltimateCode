@@ -12,4 +12,4 @@ Background: Home page is successfully loaded
 
 Scenario: create a new document by clicking "New"
 	When I press "New"
-	Then I should see editor interface: "textarea", "iframe", "select"
+	Then I should see "//*[@id="textarea"]", "iframe", "select"
