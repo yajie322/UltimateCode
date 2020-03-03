@@ -6,8 +6,8 @@ Feature: edit the document
 
 Background: a new document has been created
 
-	Given the editor interface is shown
+	Given I am on UltimateCode edit page
 
 Scenario: edit the document
-	When I type something: "Hello, world!"
-	Then I should see what I typed in the textarea: "Hello, world!"
+	When I type Hello, world!
+	Then the "the_input" field should contain "Hello, world!"

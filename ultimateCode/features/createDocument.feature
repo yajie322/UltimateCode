@@ -6,10 +6,11 @@ Feature: create a new document
 
 Background: Home page is successfully loaded
 
-	GGiven I am on UltimateCode home page
+	Given I am on UltimateCode home page
 	Then I should see button: "New"
-
 
 Scenario: create a new document by clicking "New"
 	When I press "New"
-	Then I should see "//*[@id="textarea"]", "iframe", "//*[@id="langSelect"]"
+	Then I should be on UltimateCode edit page
+	And I should see "textarea", "iframe", "select"
+
