@@ -10,4 +10,4 @@ Background: a new document has been created
 
 Scenario: edit the document
 	When I type "Hello, world!"
-	Then I should see "Hello, world!" in the "textarea"
+	Then the "textarea" should contain "Hello, world!"
