@@ -6,11 +6,11 @@ Feature: select a programming language for the coding session
 
 Background: a new document has been created
 
-	Given the editor interface is shown
+	Given I am on UltimateCode edit page
 
 Scenario: show all programming languages
-	When I click drop-down list: "select"
-	Then I should see a list of programming languages: "option"
+	When I click "select"
+	Then I should see "option"
 
 Scenario: select a programming languages
 	When I see a list of programming languages: "option"
