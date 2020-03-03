@@ -6,8 +6,8 @@ Feature: invite a collaborator to edit document together
 
 Background: a new document has been created
 
-	Given the editor interface is shown
+	Given I am on UltimateCode edit page
 
 Scenario: get the invitation hyperlink
-	When I click "invite"
+	When I press "invite"
 	Then I should see a link: "input"
