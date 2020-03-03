@@ -13,6 +13,6 @@ Scenario: show all programming languages
 	Then I should see "option"
 
 Scenario: select a programming languages
-	When I see a list of programming languages: "option"
+	When I click "select"
 	And I choose a programming language: "Ruby"
 	Then I should see this programming language: "select", "Ruby"
