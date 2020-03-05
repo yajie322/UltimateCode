@@ -60,7 +60,7 @@ Then /^(?:|I )should see button: "([^"]*)"$/ do |button|
   if page.respond_to? :should
     page.should have_button(button)
   else
-    assert page.have_button?(button)
+    assert page.has_button?(button)
   end
 end
 
