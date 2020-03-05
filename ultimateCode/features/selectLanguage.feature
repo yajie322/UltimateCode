@@ -10,7 +10,7 @@ Background: a new document has been created
 
 Scenario: show all programming languages
 	When I click "select"
-	Then I should see "option"
+	Then I should see the "option"
 
 Scenario: select a programming languages
 	When I click "select"

@@ -40,19 +40,20 @@ When /^(?:|I )press "([^"]*)"$/ do |button|
 end
 
 # When I type "Hello, world!"
-When /^(?:|I )type "([^"]*)"$/ do |word|
-  find(:xpath, '//*[@id="main"]/textarea').click
-  # keyboard_enter_text("Hello, world!")
-end
+#When /^(?:|I )type "([^"]*)"$/ do |word|
+#  find(:xpath, '//*[@id="main"]/textarea').click
+#  keyboard_enter_text("Hello, world!")
+#end
 
 # I click "select"
 When /^(?:|I )click "([^"]*)"$/ do |select|
-  find(:xpath, '//*[@id="langSelect"]').click
+  find(:xpath, '//*[@id="pl"]').click
 end
 
 # I choose a programming language: "Ruby"
-When /^(?:|I )choose a programming language: "Ruby"$/ do |language|
-  find(:xpath, '//*[@id="langSelect"]/option[14]').click
+
+When /^(?:|I )choose a programming language: "Ruby"$/ do
+  find(:xpath, '//*[@id="pl"]/option[3]').click
 end
 
 # I should see button: "New"
@@ -96,12 +97,12 @@ Then /^(?:|I )should see an "input"$/ do
 end
 
 # I should see "option"
-Then /^(?:|I )should see "option"$/ do   
+Then /^(?:|I )should see the "option"$/ do
 
   if page.respond_to? :should
-    page.should have_xpath('//*[@id="langSelect"]/option[1]')
+    page.should have_xpath('//*[@id="pl"]/option[1]')
   else
-    assert page.has_xpath?('//*[@id="langSelect"]/option[1]')
+    assert page.has_xpath?('//*[@id="pl"]/option[1]')
   end
 end
 
@@ -118,12 +119,12 @@ Then /^the "([^"]*)" field should contain "([^"]*)"$/ do |field, value|
 end
 
 # I should see this programming language: "select", "Ruby"
-Then /^(?:|I )should see this programming language: "([^"]*)", "([^"]*)"$/ do |regexp|
+Then /^(?:|I )should see this programming language: "([^"]*)", "([^"]*)"$/ do |regexp, lang|
 
   if page.respond_to? :should
-    page.should have_xpath('//*[@id="langSelect"]', :text => "Ruby")
+    page.should have_xpath('//*[@id="pl"]', :text => "Ruby")
   else
-    assert page.has_xpath?('//*[@id="langSelect"]', :text => "Ruby")
+    assert page.has_xpath?('//*[@id="pl"]', :text => "Ruby")
   end
 end
 
