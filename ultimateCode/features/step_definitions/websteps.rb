@@ -51,7 +51,7 @@ When /^(?:|I )click "([^"]*)"$/ do |select|
 end
 
 # I choose a programming language: "Ruby"
-And /^(?:|I )choose a programming language: "Ruby"$/
+When /^(?:|I )choose a programming language: "Ruby"$/ do |language|
   find(:xpath, '//*[@id="langSelect"]/option[14]').click
 end
 
