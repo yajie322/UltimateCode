@@ -1,12 +1,12 @@
 %h2 Collaborate
 
 = select_tag :pl, options_for_select(@programming_languages)
+%button{class: "btn_invite"}(onclick="invite()")invite 
+%br
+%b
+%textarea{class: "text", rows: "33", cols: "135"}
 %br
 %br
-%textarea{:width=>50}
-%br
-%br
-= button_tag
 
 
 
