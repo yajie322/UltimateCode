@@ -10,4 +10,4 @@ Background: a new document has been created
 
 Scenario: get the invitation hyperlink
 	When I press "invite"
-	Then I should see "input"
+	Then I should see the "input"
