@@ -22,21 +22,48 @@ When /^(.*) within (.*[^:]):$/ do |step, parent, table_or_string|
   with_scope(parent) { When "#{step}:", table_or_string }
 end
 
+# I am on UltimateCode home page
+# I am on UltimateCode edit page
 Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
 
+# When I go to UltimateCode edit page
 When /^(?:|I )go to (.+)$/ do |page_name|
   visit path_to(page_name)
 end
 
+# I press "New"
+# I press "invite"
 When /^(?:|I )press "([^"]*)"$/ do |button|
   click_button(button)
 end
 
-When /^(?:|I )follow "([^"]*)"$/ do |link|
-  click_link(link)
+# When I type "Hello, world!"
+When /^(?:|I )type "([^"]*)"$/ do |word|
+  find(:xpath, '//*[@id="textarea"]').click
+  keyboard_enter_text("Hello, world!")
 end
+
+# I click "select"
+When /^(?:|I )click "([^"]*)"$/ do |select|
+  find(:xpath, '//*[@id="langSelect"]').click
+end
+
+# I choose a programming language: "Ruby"
+And /^(?:|I )choose a programming language: "Ruby"$/
+  find(:xpath, '//*[@id="langSelect"]/option[14]').click
+end
+
+# I should see button: "New"
+Then /^(?:|I )should see button: "([^"]*)"$/ do |button|
+  if page.respond_to? :should
+    page.should have_button(button)
+  else
+    assert page.have_button?(button)
+  end
+end
+
 
 Then /^(?:|I )should see "([^"]*)"$/ do |text|
   if page.respond_to? :should
@@ -46,102 +73,63 @@ Then /^(?:|I )should see "([^"]*)"$/ do |text|
   end
 end
 
-Then /^(?:|I )should see \/([^\/]*)\/$/ do |regexp|
-  regexp = Regexp.new(regexp)
+# Then I should see "textarea", "iframe", "select"
+Then /^(?:|I )should see "textarea", "iframe", "select"$/ do 
 
   if page.respond_to? :should
-    page.should have_xpath('//*', :text => regexp)
+    page.should have_xpath('//*[@id="textarea"]')
+    page.should have_xpath('//*[@id="frame_the_input"]')
+    page.should have_xpath('//*[@id="langSelect"]')
   else
-    assert page.has_xpath?('//*', :text => regexp)
+    assert page.have_xpath('//*[@id="textarea"]')
+    assert page.have_xpath('//*[@id="frame_the_input"]')
+    assert page.have_xpath('//*[@id="langSelect"]')
   end
 end
 
-Then /^(?:|I )should not see "([^"]*)"$/ do |text|
-  if page.respond_to? :should
-    page.should have_no_content(text)
-  else
-    assert page.has_no_content?(text)
-  end
-end
-
-Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|
-  regexp = Regexp.new(regexp)
+# I should see "input"
+Then /^(?:|I )should see "input"$/ do   
 
   if page.respond_to? :should
-    page.should have_no_xpath('//*', :text => regexp)
+    page.should have_xpath('//*[@id="invite_url"]')
   else
-    assert page.has_no_xpath?('//*', :text => regexp)
+    assert page.have_xpath('//*[@id="invite_url"]')
   end
 end
 
-Then /^the "([^"]*)" field(?: within (.*))? should contain "([^"]*)"$/ do |field, parent, value|
-  with_scope(parent) do
-    field = find_field(field)
-    field_value = (field.tag_name == 'textarea') ? field.text : field.value
-    if field_value.respond_to? :should
-      field_value.should =~ /#{value}/
-    else
-      assert_match(/#{value}/, field_value)
-    end
-  end
-end
+# I should see "option"
+Then /^(?:|I )should see "option"$/ do   
 
-Then /^the "([^"]*)" field(?: within (.*))? should not contain "([^"]*)"$/ do |field, parent, value|
-  with_scope(parent) do
-    field = find_field(field)
-    field_value = (field.tag_name == 'textarea') ? field.text : field.value
-    if field_value.respond_to? :should_not
-      field_value.should_not =~ /#{value}/
-    else
-      assert_no_match(/#{value}/, field_value)
-    end
-  end
-end
-
-Then /^the "([^"]*)" field should have the error "([^"]*)"$/ do |field, error_message|
-  element = find_field(field)
-  classes = element.find(:xpath, '..')[:class].split(' ')
-
-  form_for_input = element.find(:xpath, 'ancestor::form[1]')
-  using_formtastic = form_for_input[:class].include?('formtastic')
-  error_class = using_formtastic ? 'error' : 'field_with_errors'
-
-  if classes.respond_to? :should
-    classes.should include(error_class)
+  if page.respond_to? :should
+    page.should have_xpath('//*[@id="langSelect"]/option[1]')
   else
-    assert classes.include?(error_class)
-  end
-
-  if page.respond_to?(:should)
-    if using_formtastic
-      error_paragraph = element.find(:xpath, '../*[@class="inline-errors"][1]')
-      error_paragraph.should have_content(error_message)
-    else
-      page.should have_content("#{field.titlecase} #{error_message}")
-    end
-  else
-    if using_formtastic
-      error_paragraph = element.find(:xpath, '../*[@class="inline-errors"][1]')
-      assert error_paragraph.has_content?(error_message)
-    else
-      assert page.has_content?("#{field.titlecase} #{error_message}")
-    end
+    assert page.have_xpath('//*[@id="langSelect"]/option[1]')
   end
 end
 
-Then /^the "([^"]*)" field should have no error$/ do |field|
-  element = find_field(field)
-  classes = element.find(:xpath, '..')[:class].split(' ')
-  if classes.respond_to? :should
-    classes.should_not include('field_with_errors')
-    classes.should_not include('error')
+# the "the_input" should contain "Hello, world!"
+Then /^the "([^"]*)" field should contain "([^"]*)"$/ do |field, value|
+  
+  field = find_field(field)
+  field_value = (field.tag_name == 'textarea') ? field.text : field.value
+  if field_value.respond_to? :should
+    field_value.should =~ /#{value}/
   else
-    assert !classes.include?('field_with_errors')
-    assert !classes.include?('error')
+    assert_match(/#{value}/, field_value)
   end
 end
 
+# I should see this programming language: "select", "Ruby"
+Then /^(?:|I )should see this programming language: "([^"]*)", "([^"]*)"$/ do |regexp|
 
+  if page.respond_to? :should
+    page.should have_xpath('//*[@id="langSelect"]', :text => "Ruby")
+  else
+    assert page.has_xpath?('//*[@id="langSelect"]', :text => "Ruby")
+  end
+end
+
+# I should be on UltimateCode edit page
 Then /^(?:|I )should be on (.+)$/ do |page_name|
   current_path = URI.parse(current_url).path
   if current_path.respond_to? :should
@@ -150,7 +138,6 @@ Then /^(?:|I )should be on (.+)$/ do |page_name|
     assert_equal path_to(page_name), current_path
   end
 end
-
 
 Then /^show me the page$/ do
   save_and_open_page
