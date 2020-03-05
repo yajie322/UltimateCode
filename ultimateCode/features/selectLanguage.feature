@@ -6,7 +6,7 @@ Feature: select a programming language for the coding session
 
 Background: a new document has been created
 
-	Given I am on UltimateCode edit page
+	Given I am on the UltimateCode edit page
 
 Scenario: show all programming languages
 	When I click "select"

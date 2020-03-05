@@ -60,7 +60,7 @@ Then /^(?:|I )should see button: "([^"]*)"$/ do |button|
   if page.respond_to? :should
     page.should have_button(button)
   else
-    assert page.have_button?(button)
+    assert page.has_button?(button)
   end
 end
 
@@ -77,13 +77,12 @@ end
 Then /^(?:|I )should see "textarea", "iframe", "select"$/ do 
 
   if page.respond_to? :should
-    page.should have_xpath('//*[@id="textarea"]')
+    page.should have_xpath('//*[@id="main"]/textarea')
     page.should have_xpath('//*[@id="frame_the_input"]')
     page.should have_xpath('//*[@id="langSelect"]')
   else
-    assert page.have_xpath('//*[@id="textarea"]')
-    assert page.have_xpath('//*[@id="frame_the_input"]')
-    assert page.have_xpath('//*[@id="langSelect"]')
+    assert page.has_xpath?('//*[@id="main"]/textarea')
+    assert page.has_xpath?('//*[@id="pl"]')
   end
 end
 
@@ -93,7 +92,7 @@ Then /^(?:|I )should see "input"$/ do
   if page.respond_to? :should
     page.should have_xpath('//*[@id="invite_url"]')
   else
-    assert page.have_xpath('//*[@id="invite_url"]')
+    assert page.has_xpath?('//*[@id="invite_url"]')
   end
 end
 
@@ -103,7 +102,7 @@ Then /^(?:|I )should see "option"$/ do
   if page.respond_to? :should
     page.should have_xpath('//*[@id="langSelect"]/option[1]')
   else
-    assert page.have_xpath('//*[@id="langSelect"]/option[1]')
+    assert page.has_xpath?('//*[@id="langSelect"]/option[1]')
   end
 end
 

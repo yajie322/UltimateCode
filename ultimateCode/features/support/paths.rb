@@ -14,7 +14,7 @@ module NavigationHelpers
     case page_name
 
     when /^the (UltimateCode )?home\s?page$/ then '/'
-    when /^the (UltimateCode )?edit\s?page$/ then '/documents'
+    when /^the (UltimateCode )?edit\s?page$/ then '/documents/new'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
