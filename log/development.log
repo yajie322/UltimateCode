@@ -3552,3 +3552,31 @@ Processing by DocumentsController#update as TEXT
   Parameters: {"content"=>"", "id"=>"id"}
   Rendered documents/update.html.haml within layouts/application (0.1ms)
 Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 19:38:50 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 155ms (Views: 151.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 19:38:52 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 19:38:55 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 19:41:24 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"11", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
