@@ -11,4 +11,10 @@ class DocumentsController < ApplicationController
     @theme = [['Select Theme','ambiance'], ['Ambiance','ambiance'], ['Chaos','chaos'], ['Dracula','dracula'], ['Cobalt','cobalt'], ['Terminal','terminal'], ['Twilight','twilight'], ['Monokai','monokai'], ['Chrome','chrome'], ['Dawn','dawn'], ['Github','github'], ['Xcode','xcode'],]
     @font_size = [['Font Size', 12], ['12', 12], ['14', 14], ['16', 16], ['18', 18], ['20', 20], ['40', 40], ['80', 80]]
   end
+
+  def update
+    #params['content'] to get content
+    @question = "123"
+    @programming_languages = [[params['content'],'C1'], ['C++1','C++1'], ['Ruby1','Ruby1']]
+  end
 end

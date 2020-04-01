@@ -4,11 +4,6 @@
     %script(src="//code.jquery.com/jquery-1.11.1.min.js")
     %link(href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"  rel="stylesheet")
     
-    
-    
-    
-    
-    
     %div{class:"p2_title"} 
       %button{class:"button_add button2", id:"myBtn"} invite 
       %label{class:"switch"}
@@ -19,8 +14,7 @@
       = select_tag :p_font, options_for_select(@font_size), :id => "selector4"
       = select_tag :pl, options_for_select(@programming_languages), :id => "selector3"
       = select_tag :p_style, options_for_select(@theme), :id => "selector2"
-      
-        
+
     %div{class:"modal", id: "myModal"} 
       %div{class:"modal-content"} 
         %span{class: "close"}
@@ -37,6 +31,3 @@
     %textarea{class: "text", id: "myTextarea"}
     %br
     %br
-
-
-
