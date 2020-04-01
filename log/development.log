@@ -1799,3 +1799,1205 @@ Processing by DocumentsController#update as TEXT
   Parameters: {"content"=>"$(this).text()$(this).text()", "id"=>"id"}
   Rendered documents/update.html.haml within layouts/application (0.1ms)
 Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 14:59:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 122ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/button.self-6c7334d5d67e714edb5b469492ce65f52cf6e492ca8f8ef63461a943bc25d7a2.css?body=1" for 127.0.0.1 at 2020-04-01 14:59:13 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2020-04-01 14:59:13 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:59:14 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:16 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textarea", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaH", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHe", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHel", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo,", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, m", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my n", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my na", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my nam", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name i", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <s", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <sp", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <spa", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span s", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span st", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span sty", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span styl", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"c", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"co", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"col", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"colo", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color:", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: b", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: bl", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blu", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;\"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;\">", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;\">B", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;\">Bo", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;\">Bob", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;\">Bob<", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;\">Bob</", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;\">Bob</s", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:42 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"--set-upstream origin textareaHelo, my name is <span style=\"color: blue;\">Bob</sp", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:59:51 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"m", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me i", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<s", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<sp", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<spa", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span s", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span st", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span sty", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span styl", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"c", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"co", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"col", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"colo", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color:", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: b", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: bl", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blu", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">B", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bo", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob<", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</s", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</sp", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</spa", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span>", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> a", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I h", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I ha", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I hav", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a f", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a fr", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a fri", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a frie", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a frien", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend n", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend na", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend nam", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <s", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <sp", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <spa", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span s", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span st", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span sty", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span styl", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"c", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"co", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"col", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"colo", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color:", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: ", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: g", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: ge", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: gee", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">J", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Jo", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Joe", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Joe<", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Joe</", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Joe</s", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Joe</sp", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Joe</spa", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Joe</span", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Joe</span>", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:59:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"me is<span style=\"color: blue;\">Bob</span> ad I have a friend name <span style=\"color: geen;\">Joe</span>.", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 15:00:03 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 15:00:19 -0400
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 15:00:20 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 15:00:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"Hello, my name is <span style=\"color: blue;\">Bob</span> and I have a friend name <span style=\"color: green;\">Joe</span>.", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 15:03:33 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 15:03:48 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 15:03:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 15:04:25 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 15:04:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 87ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 15:04:47 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 15:06:28 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
