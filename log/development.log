@@ -7926,3 +7926,11 @@ Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/button.self-6e8ce4834bc6fc91c7cc65ea8f60d4997650ab4888a17ae962372c829d90be0f.css?body=1" for ::1 at 2020-04-01 15:51:34 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for ::1 at 2020-04-01 16:03:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 538ms (Views: 524.8ms | ActiveRecord: 0.0ms)
