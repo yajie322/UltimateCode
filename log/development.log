@@ -7875,3 +7875,54 @@ Processing by DocumentsController#new as HTML
   Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
   Rendered documents/new.html.haml within layouts/application (9.8ms)
 Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for ::1 at 2020-04-01 15:49:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (43.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/controllers/documents_controller.rb:10: syntax error, unexpected tCONSTANT, expecting ']'
+y','Ruby'], ['Python'','Python']]
+                              ^
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/controllers/documents_controller.rb:10: unterminated string meets end of file
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/controllers/documents_controller.rb:10: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/documents_controller.rb:10: syntax error, unexpected tCONSTANT, expecting ']'
+  app/controllers/documents_controller.rb:10: unterminated string meets end of file
+  app/controllers/documents_controller.rb:10: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (161.5ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for ::1 at 2020-04-01 15:50:29 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 573ms (Views: 572.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for ::1 at 2020-04-01 15:50:40 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for ::1 at 2020-04-01 15:51:34 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/button.self-6e8ce4834bc6fc91c7cc65ea8f60d4997650ab4888a17ae962372c829d90be0f.css?body=1" for ::1 at 2020-04-01 15:51:34 -0400
