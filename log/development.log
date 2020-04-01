@@ -242,3 +242,1560 @@ Processing by DocumentsController#new as HTML
   Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
   Rendered documents/new.html.haml within layouts/application (3.0ms)
 Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-30 16:39:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 264ms (Views: 259.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2020-03-30 16:39:35 -0400
+
+
+Started GET "/assets/invite.self-aff6828654085ff131c3444289965bba6b2528a3639cd31bdc1bbd83cdf722a0.js?body=1" for 127.0.0.1 at 2020-03-30 16:39:35 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2020-03-30 16:39:35 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-03-30 16:39:43 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-30 21:51:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 244ms (Views: 239.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-03-30 21:51:16 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-31 23:57:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 308ms (Views: 304.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-aff6828654085ff131c3444289965bba6b2528a3639cd31bdc1bbd83cdf722a0.js?body=1" for 127.0.0.1 at 2020-03-31 23:57:21 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-03-31 23:57:22 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 20ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-03-31 23:57:41 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-03-31 23:58:06 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-03-31 23:58:09 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-03-31 23:58:14 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-31 23:58:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 124ms (Views: 120.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-03-31 23:58:31 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:04:29 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-47e68b1cea33ecb87140f2d3a7558c9d3b7ad3d1f54baa03bb15d80feb492804.js?body=1" for 127.0.0.1 at 2020-04-01 00:04:29 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:04:37 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:04:44 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:05:50 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-4f7ed69fef5ae3eb08fbf8090fcb82e1439c550d723be82eb4253e3821e2ce11.js?body=1" for 127.0.0.1 at 2020-04-01 00:05:50 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:06:37 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:06:42 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 00:45:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 149ms (Views: 145.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-be38d4421a9ba8994572e67745594a26cfb583d69854f8ea702dbd312196f936.js?body=1" for 127.0.0.1 at 2020-04-01 00:45:12 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:45:34 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:46:03 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-1a23fa90c6c79c3ffc43e4253a94c3b197f2741825c9e0ab6462e609453c8a82.js?body=1" for 127.0.0.1 at 2020-04-01 00:46:03 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:47:58 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-d817d3fd6ff11d21a671503be3a5cf85414aa3853ba5c233829889b42c79c251.js?body=1" for 127.0.0.1 at 2020-04-01 00:47:58 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:48:09 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-e2e12c0958d7142714820e3b32e254a10462603a4dd72856808624da7c36314f.js?body=1" for 127.0.0.1 at 2020-04-01 00:48:09 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:48:39 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:50:39 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-3e4270d5f6a28d7b1bf4e8d85d1dab7dc8e6b8f84adf3452b69a760811fa78de.js?body=1" for 127.0.0.1 at 2020-04-01 00:50:39 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:53:23 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-ac1f8f84d7564f4f88fb9d4519c360615a24f2e0bcd4d88acea6ca74a375948e.js?body=1" for 127.0.0.1 at 2020-04-01 00:53:23 -0400
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:53:25 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (5.1ms)
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:53:30 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (3.4ms)
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:53:40 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (3.3ms)
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:53:42 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (3.3ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:55:00 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-b605077cdb8a990440b93764a73471dfae5115ca3987a3e99194696bd1b92692.js?body=1" for 127.0.0.1 at 2020-04-01 00:55:00 -0400
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:55:02 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (3.4ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:55:32 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-946447d0a206b86b5932b7cab4c705e01eb8d273e65b5ce11f8d9e4287d23a58.js?body=1" for 127.0.0.1 at 2020-04-01 00:55:33 -0400
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:55:36 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (6.9ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:55:53 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-3197aa836ee32cf93b01c9e187dc14fa7553056614c67ee71e8d526935fbccdf.js?body=1" for 127.0.0.1 at 2020-04-01 00:55:53 -0400
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:55:54 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (3.3ms)
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:55:57 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (3.3ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:57:57 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-9bb2be6240acf787c917c23a8bbdfca53fd4ee1c64bbeee4b8770726f01b5ee0.js?body=1" for 127.0.0.1 at 2020-04-01 00:57:57 -0400
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:57:59 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (3.3ms)
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:58:02 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (3.3ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 00:58:18 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 00:58:20 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (3.6ms)
+
+
+Started POST "/documents/update" for 127.0.0.1 at 2020-04-01 01:03:59 -0400
+
+ActionController::RoutingError (No route matches [POST] "/documents/update"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (6.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:04:03 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-dfb7fd6e641b046c7b8d281bf78c811ec31893a2778f5f956973f67ed4910c4e.js?body=1" for 127.0.0.1 at 2020-04-01 01:04:03 -0400
+
+
+Started GET "/documents/new?cbo_id=1" for 127.0.0.1 at 2020-04-01 01:04:04 -0400
+Processing by DocumentsController#new as TEXT
+  Parameters: {"cbo_id"=>"1"}
+  Rendered documents/new.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?cbo_id=" for 127.0.0.1 at 2020-04-01 01:04:07 -0400
+Processing by DocumentsController#new as TEXT
+  Parameters: {"cbo_id"=>""}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:05:43 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-1130917cb0435f15f88a0f12f13db639e9186c1a22cb16831ea8ae93ba30fe3a.js?body=1" for 127.0.0.1 at 2020-04-01 01:05:43 -0400
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:05:44 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:05:47 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"12", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:07:32 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-7e237d4f5371f7479e2abab0127cfba39d19e34b9e96f43bbc11e751bcc44737.js?body=1" for 127.0.0.1 at 2020-04-01 01:07:32 -0400
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:07:34 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:07:39 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"12", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:07:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"123", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:08:29 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:08:30 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:08:59 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:09:00 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:09:51 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-133b49db083759e00f35f05ef27d318d5d779af7299835cc183ddcbef11ecc5f.js?body=1" for 127.0.0.1 at 2020-04-01 01:09:51 -0400
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:09:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"1", "id"=>"id"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template documents/update, application/update with {:locale=>[:en], :formats=>[:text, :html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :web_console_v2], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/kc3317/ASE/UltimateCode/app/views"
+):
+  actionview (4.2.10) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.10) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.10) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.10) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.10) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.10) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.10) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.10) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.10) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.10) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.5ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:10:22 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-5fb2e440a996a5630108f0e3a72958ffef8878ed257cd10e8c7be71fb6e36fe8.js?body=1" for 127.0.0.1 at 2020-04-01 01:10:22 -0400
+
+
+Started GET "/documents/new?cbo_id=1" for 127.0.0.1 at 2020-04-01 01:10:24 -0400
+Processing by DocumentsController#new as TEXT
+  Parameters: {"cbo_id"=>"1"}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:10:49 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:10:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"1", "id"=>"id"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template documents/update, application/update with {:locale=>[:en], :formats=>[:text, :html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :web_console_v2], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/kc3317/ASE/UltimateCode/app/views"
+):
+  actionview (4.2.10) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.10) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.10) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.10) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.10) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.10) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.10) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.10) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.10) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.10) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.2ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:11:21 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:11:23 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"cbo_id"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:12:59 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-e18f860128e3e8ec2299fd6597515fef01814af428e6b1b157fab16ee77887a4.js?body=1" for 127.0.0.1 at 2020-04-01 01:12:59 -0400
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:13:03 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.0ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:13:34 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:13:36 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:15:40 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:15:41 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:16:13 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:16:14 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:17:42 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:17:45 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"q", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:18:46 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"qq", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:19:34 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:19:35 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:20:03 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:20:04 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template documents/update, application/update with {:locale=>[:en], :formats=>[:text, :html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :web_console_v2], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :haml, :jbuilder]}. Searched in:
+  * "/home/kc3317/ASE/UltimateCode/app/views"
+):
+  actionview (4.2.10) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.10) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.10) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.10) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.10) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.10) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.10) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.10) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.10) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.10) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.10) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.10) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.10) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.10) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.10) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.10) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.10) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.10) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.10) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.10) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.10) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.4ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:20:47 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:20:48 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 16ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 01:22:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 122ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 01:23:00 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:23:02 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:23:09 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1q", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:23:11 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1qq", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 01:23:13 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"1qqq", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-01 14:47:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 386ms (Views: 382.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/textareaLikeDiv.self-9539b6fd208aa8fac930845be75a7035c78808cee3480f54c42356f179df92fb.css?body=1" for 127.0.0.1 at 2020-04-01 14:47:15 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:47:17 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:47:38 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `ture' for #<#<Class:0x007fa63a44df30>:0x007fa63a56a0d0>):
+    4: %button{class: "btn_invite"}(onclick="invite()")invite 
+    5: %br
+    6: %b
+    7: #MainContent.text{:contenteditable => ture}
+    8: %br
+    9: %br
+  app/views/documents/new.html.haml:7:in `_app_views_documents_new_html_haml___4575262785630290385_70175960024760'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.8ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.6ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:48:24 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/textareaLikeDiv.self-180fa98e01938614e656599dd90929c3ad2aa17ba6dfb4eeda5407d848deaf42.css?body=1" for 127.0.0.1 at 2020-04-01 14:48:24 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:49:06 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:49:09 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:49:20 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:49:43 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:49:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:49:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:49:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:50:02 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:50:20 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:51:59 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-c0404dd2137f90e0d800352890ab3a1ef610639e025fa4e55a9b78a231adca42.js?body=1" for 127.0.0.1 at 2020-04-01 14:51:59 -0400
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:52:02 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:52:32 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-524f716bc0b0095503befdb0bb94f272359eadae1ee1ae0f73cf9c0e13e16724.js?body=1" for 127.0.0.1 at 2020-04-01 14:52:32 -0400
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:52:36 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:52:47 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-2ec4b45e9a6d8ad48820dde0f4c3b398f435a03029d4411a6a6387e594186603.js?body=1" for 127.0.0.1 at 2020-04-01 14:52:47 -0400
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:52:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:52:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:52:57 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:53:01 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:53:03 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:53:06 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for 127.0.0.1 at 2020-04-01 14:53:25 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/updateDocument.self-8474b85ca80a0b0ed8164c853e84b46b3e3de484a5988de26fc7a589a808fbe6.js?body=1" for 127.0.0.1 at 2020-04-01 14:53:25 -0400
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:53:27 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"$(this).text()", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for 127.0.0.1 at 2020-04-01 14:53:37 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"$(this).text()$(this).text()", "id"=>"id"}
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
