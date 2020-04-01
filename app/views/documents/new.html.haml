@@ -1,12 +1,34 @@
-%h2 Collaborate
-
-= select_tag :pl, options_for_select(@programming_languages)
-%button{class: "btn_invite"}(onclick="invite()")invite 
-%br
-%b
-%textarea{class: "text", rows: "33", cols: "135"}
-%br
-%br
+%html
+  %head
+    %script(src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js")
+    %script(src="//code.jquery.com/jquery-1.11.1.min.js")
+    %link(href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"  rel="stylesheet")
+    %link(rel="stylesheet" type="text/css" href="/highlight/styles/default.css")
+    %script(src="/highlight/highlight.pack.js")
+    
+    
+    
+    
+    %div{class:"p2_title"} 
+      = select_tag :pl, options_for_select(@programming_languages), :id => "selector"
+      %button{class:"button_add button2", id:"myBtn"} invite 
+        
+    %div{class:"modal", id: "myModal"} 
+      %div{class:"modal-content"} 
+        %span{class: "close"}
+          &times;
+        %p{id:"modal_title"} Invite Collaborators
+        %input{type: "text", class: "text-line"} 
+        %p{id:"modal_footer"} Invited: 
+        %button{class:"button_add button1"} Add 
+        
+    %br       
+    %b
+    %div{id:"editor"} 
+      %pre{id:"editor"} 
+    %textarea{class: "text", id: "myTextarea"}
+    %br
+    %br
 
 
 
