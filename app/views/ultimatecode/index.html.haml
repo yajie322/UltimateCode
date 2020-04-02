@@ -2,6 +2,7 @@
   %h1.title Ultimate Code 
   - if logged_in?
     = form_tag new_document_path, :id => "new_document", :method => :get do
+      = hidden_field_tag :user_id, session[:user_id]
       = submit_tag 'New Document', :class => "btn"
     = link_to "Sign out", logout_path
   - else
