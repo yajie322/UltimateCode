@@ -139,7 +139,7 @@ textarea {
 .button2 { 
     width:100px;
     margin-left: 10px;
-    padding: 5px;
+    padding: 0px;
     background-color: rbga(0,0,0,1);
     color: black;
     height: 35px;
@@ -216,7 +216,7 @@ textarea {
   position: absolute;
   cursor: pointer;
   color: black;
-  padding-top:12px;
+  padding-top:9px;
   padding-left:7px;
   top: 0;
   left: 0;
