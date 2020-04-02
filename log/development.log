@@ -78,3 +78,215 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-01 23:47:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:09 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"k", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 627ms (Views: 625.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:10 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:12 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"f", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:12 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"fo", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:13 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:13 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i i", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i in", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:16 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i in ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:17 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i in n", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:17 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i in nn", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:18 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i in nnn", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:18 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i in nn", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 31ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:19 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i in n", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:19 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i in ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:19 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i in", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:20 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i i", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:20 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 36ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:20 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for i", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:20 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:20 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"for", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 32ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:20 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"fo", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:20 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"f", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 36ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-01 23:48:20 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
