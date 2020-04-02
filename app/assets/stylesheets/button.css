@@ -263,3 +263,27 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+#facebook_icon{
+  font-size:45px;
+  color:#3b5998;
+  margin-right: 10px;
+}
+#github_icon{
+  font-size:45px;
+  color:#000;
+}
+#google_icon{
+  font-size:45px;
+  margin-right: 10px;
+}
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.icon {
+  margin-top: 20px;
+  margin-left: 470px;
+}
