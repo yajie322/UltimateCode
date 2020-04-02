@@ -25,8 +25,29 @@ class DocumentsController < ApplicationController
   def update
     #params['content'] to get content
     doc = Document.find_by(name: params[:id])
-    doc.update(content: params['content'])
-    doc.save!
-    @programming_languages = [doc.content, doc.content]
+    if doc
+        doc.update(content: params['content'], updated_at: Time.now)
+        doc.save!
+    end
+    @programming_languages = [[doc.content, doc.content],[doc.updated_at, doc.updated_at]]
+  end
+
+  def edit_doc_name
+    doc = Document.find_by(name: params['old_doc_name'])
+    if doc
+        if Document.find_by(name: params['new_doc_name'])
+            respond_to do |format|
+              msg = { :status => "err", :message => "file name exist!"}
+              format.json { render json: msg }
+            end
+        else
+            doc.update(name: params['new_doc_name'], updated_at: Time.now)
+            doc.save!
+            respond_to do |format|
+              msg = { :status => "ok", :message => "Success"}
+              format.json { render json: msg }
+            end
+        end
+    end
   end
 end
