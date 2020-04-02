@@ -34,7 +34,7 @@ window.onload = function () {
       editor.setOptions({
             enableBasicAutocompletion: true,
             enableSnippets: true,
-            enableLiveAutocompletion: false
+            enableLiveAutocompletion: true
       })
 
 
