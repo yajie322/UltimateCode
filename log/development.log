@@ -290,3 +290,454 @@ Processing by DocumentsController#update as TEXT
 Can't verify CSRF token authenticity
   Rendered documents/update.html.haml within layouts/application (0.2ms)
 Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-01 23:56:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2020-04-01 23:56:41 -0400
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (17.0ms)
+Completed 200 OK in 740ms (Views: 738.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/textareaLikeDiv.self-180fa98e01938614e656599dd90929c3ad2aa17ba6dfb4eeda5407d848deaf42.css?body=1" for ::1 at 2020-04-01 23:56:42 -0400
+
+
+Started GET "/assets/updateDocument.self-5db6851a89eade96191cb0d0becae76975c2f1198ae5fca2c217ccdfc6326661.js?body=1" for ::1 at 2020-04-01 23:56:42 -0400
+
+
+Started GET "/assets/invite.self-58c773d38d67042510ef8eb786466dcbd0dfeed740d726baa00cfc08f7aa1073.js?body=1" for ::1 at 2020-04-01 23:56:42 -0400
+
+
+Started GET "/assets/button.self-59e16d45e9893f68b72914e5711387b4774f742e7a7b0af17283c35afaf5e756.css?body=1" for ::1 at 2020-04-01 23:56:42 -0400
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-01 23:56:44 -0400
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-01 23:56:44 -0400
+
+
+Started GET "/auth/google_oauth2/callback?state=1e6ec427aa37019b8df1fdc1f1beddb4a2fb03c203205dc5&code=4/yAGlF1DV87WmMhe628irqh-nkrxzbPB2aiQb2wFAvmPA0BneeTqmUS0Sd4dATmBveCsWg89BNDdZmrdeUmBNJ-E&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=columbia.edu&prompt=consent" for ::1 at 2020-04-01 23:56:48 -0400
+
+ActionController::RoutingError (uninitialized constant SessionsController):
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.10) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.10) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.10) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:420:in `call_app!'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:373:in `callback_phase'
+  omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:75:in `callback_phase'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:238:in `callback_call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:189:in `call!'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+  omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (203.6ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (183.2ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (405.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-02 00:00:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 490ms (Views: 474.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2020-04-02 00:00:26 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2020-04-02 00:00:26 -0400
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-02 00:00:27 -0400
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-02 00:00:28 -0400
+
+
+Started GET "/auth/google_oauth2/callback?state=221efa673de800c52a05d39429e85e4214510dff03af30f8&code=4/yQFFjOOYFkblLSNJ5yMVQhi4pZL7U7Gkbkg65oTz2IrWfwUJ-vdlEebuLozR5FsMdYCs_6_PDPeaSlqEwQwkwYQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-02 00:00:30 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"221efa673de800c52a05d39429e85e4214510dff03af30f8", "code"=>"4/yQFFjOOYFkblLSNJ5yMVQhi4pZL7U7Gkbkg65oTz2IrWfwUJ-vdlEebuLozR5FsMdYCs_6_PDPeaSlqEwQwkwYQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"1", "hd"=>"columbia.edu", "prompt"=>"none", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (4.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "google_oauth2"], ["uid", "115980040284808361386"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "users" ("provider", "uid", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["provider", "google_oauth2"], ["uid", "115980040284808361386"], ["first_name", "Yajie"], ["last_name", "Zhao"], ["email", "yz3231@columbia.edu"], ["created_at", "2020-04-02 04:00:30.701654"], ["updated_at", "2020-04-02 04:00:30.701654"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 79ms (ActiveRecord: 32.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-02 00:00:30 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&commit=New+Document" for ::1 at 2020-04-02 00:00:38 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"New Document"}
+  Rendered documents/new.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#i", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 82ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#in", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#inc", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#incl", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:50 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#inclu", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:51 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#inclue", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:51 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#inclu", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:51 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#incl", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:51 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#incld", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:52 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#incl", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 57ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:52 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#inclu", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:52 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#includ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:52 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#include", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 56ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#includ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#inclu", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#incl", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#inc", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#in", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#i", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:54 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"#", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:54 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"d", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:59 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"de", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:00:59 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 51ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:01 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:03 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def s", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 57ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:03 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ss", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:04 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ss:", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:04 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ss:\n    ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:04 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ss:\n", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:05 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ss:\n    r", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 53ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:05 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ss:\n    re", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:06 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ss:\n    ret", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:09 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ss:\n    ", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:09 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"def ss:\n    return", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/documents/id" for ::1 at 2020-04-02 00:01:11 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"id"}
+Can't verify CSRF token authenticity
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.0ms)
