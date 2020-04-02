@@ -4,6 +4,7 @@
 /.config
 /coverage/
 /InstalledFiles
+/log/
 /pkg/
 /spec/reports/
 /spec/examples.txt
