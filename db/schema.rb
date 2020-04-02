@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200303122253) do
+ActiveRecord::Schema.define(version: 20200401195506) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "collaborations", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "document_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "collaborations", ["document_id"], name: "index_collaborations_on_document_id", using: :btree
+  add_index "collaborations", ["user_id"], name: "index_collaborations_on_user_id", using: :btree
 
   create_table "document", force: :cascade do |t|
     t.string   "name"
@@ -24,4 +34,27 @@ ActiveRecord::Schema.define(version: 20200303122253) do
     t.datetime "updated_at"
   end
 
+  create_table "documents", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "documents", ["user_id"], name: "index_documents_on_user_id", using: :btree
+
+  create_table "users", force: :cascade do |t|
+    t.string   "email"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "uid"
+    t.string   "provider"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "collaborations", "documents"
+  add_foreign_key "collaborations", "users"
+  add_foreign_key "documents", "users"
 end
