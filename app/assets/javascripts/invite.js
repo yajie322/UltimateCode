@@ -4,7 +4,7 @@ window.onload = function () {
       // your code 
       var modal = document.getElementById("myModal");
       var span = document.getElementsByClassName("close")[0];
-      document.getElementById("myTextarea").value = "for i in run";
+      //document.getElementById("myTextarea").value = "for i in run";
       
       document.getElementById("myBtn").onclick = function () {
             modal.style.display = "block";

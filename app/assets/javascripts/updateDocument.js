@@ -1,8 +1,6 @@
 $(document).ready(function(){
     //for editor
-    var editor = ace.edit("MainContent");
-    editor.setTheme("ace/theme/twilight");
-    editor.session.setMode("ace/mode/python");
+    var editor = ace.edit("editor");
     editor.session.on('change', function(){
         alert(editor.session.getValue())
         $.ajax({
@@ -19,5 +17,5 @@ $(document).ready(function(){
                 alert(thrownError);
             }
         });
-    });
+      });
 });
