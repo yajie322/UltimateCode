@@ -49,6 +49,5 @@ class DocumentsController < ApplicationController
             end
         end
     end
-    @programming_languages = [[doc.name, doc.name],[doc.updated_at, doc.updated_at]]
   end
 end
