@@ -7,7 +7,8 @@ window.onload = function () {
       var span = document.getElementsByClassName("close")[0];
 
 
-      document.getElementById("myBtn").onclick = function () {
+      document.getElementById("invite").onclick = function () {
+            console.log("hi");
             modal.style.display = "block";
       }
       span.onclick = function () {
