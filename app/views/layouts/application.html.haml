@@ -15,20 +15,11 @@
     %body
       - if logged_in?
         = link_to logout_path do
-          
-          %span{class: "sign"}
+          %span{class: "navBtn", :id => "signOut"}
             %i{class: "fas fa-lock"} 
-            %span{id:"sign_out"} Sign out
-        - if current_page?(new_document_path) 
-          %span{class: "sign", id:"invite"}
-            %i{class: "fas fa-plus"} 
-            %span{id:"hi"} Invite 
-      %div.container
-
+            %span Sign out
       
-        
-        
-        
+      %div.container  
         %div.navbar.navbar-expand-lg.text-white
         #main
           - if flash[:notice]

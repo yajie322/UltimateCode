@@ -89,7 +89,7 @@ textarea {
 }
 
 /* The Close Button */
-.close {
+#closeModalBtn {
   color: black;
   float: right;
   font-size: 28px;
@@ -295,7 +295,8 @@ input:checked + .slider:before {
   font-size: 20px;
   font-weight: bold;
 }
-.sign{
+.navBtn{
+  position: relative;
   float:right;
   margin: 15px;
   padding: 10px;
@@ -318,7 +319,16 @@ input:checked + .slider:before {
 
 #invite{
   cursor: pointer;
+  position: relative;
+  float:right;
+  margin: 1px;
+  padding: 10px;
+  color:black;
+  font-size: 15px;
+  border: 0.1em solid black;
+  font-family: 'Josefin Sans', sans-serif;
 }
+
 .doc_name{
   
   padding: 14px;

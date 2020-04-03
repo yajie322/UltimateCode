@@ -1,9 +1,5 @@
 %html
-  %head
-    %script(src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js")
-    %script(src="//code.jquery.com/jquery-1.11.1.min.js")
-    %link(href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"  rel="stylesheet")
-    
+  %head    
     %div{class:"p2_title"} 
 
       %span{class:"doc_name"}
@@ -20,14 +16,19 @@
         %span{class:"slider"} 
           %span{class:"word"} Off &nbsp;On
       = hidden_field_tag 'doc_name', @doc_name
-    %div{class:"modal", id: "myModal"} 
-      %div{class:"modal-content"} 
-        %span{class: "close"}
+
+      %span{:id => "invite"}
+        %i{class: "fas fa-plus"} 
+        %span Invite
+
+    %div{class:"modal", id: "inviteModal"} 
+      %div{class:"modal-content"}
+        %span{id: "closeModalBtn"}
           &times;
-        %p{id:"modal_title"} Invite Collaborators
-        %input{type: "text", class: "text-line"} 
-        %p{id:"modal_footer"} Invited: 
-        %button{class:"button_add button1"} Add 
+        %p{id:"modal-title"} Invite Collaborators
+        %input{id: "collaborator_email", type: "text", class: "text-line"} 
+        %p{id:"modal_footer"} Invited:
+        %button{class:"button_add button1", id: "collaboratorAddBtn"} Add 
         
     %br       
     %b

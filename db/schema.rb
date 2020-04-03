@@ -26,14 +26,6 @@ ActiveRecord::Schema.define(version: 20200401195506) do
   add_index "collaborations", ["document_id"], name: "index_collaborations_on_document_id", using: :btree
   add_index "collaborations", ["user_id"], name: "index_collaborations_on_user_id", using: :btree
 
-  create_table "document", force: :cascade do |t|
-    t.string   "name"
-    t.string   "owner"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "documents", force: :cascade do |t|
     t.string   "name"
     t.integer  "user_id"
