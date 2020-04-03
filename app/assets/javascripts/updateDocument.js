@@ -24,7 +24,7 @@ $(document).ready(function(){
     $('#selector5').on('change', function() {
         var selected = this.value;
         $.ajax({
-            url: '/documents/change_doc',
+            url: $(location).attr('href') + '/change_doc',
             type: "GET",
             data: {'file_name' : selected},
             dataType: "text",

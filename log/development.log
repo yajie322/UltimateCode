@@ -6389,3 +6389,46 @@ Processing by DocumentsController#edit_doc_name as TEXT
   [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "1_untitled_"]]
 Redirected to http://localhost:3000/documents/1
 Completed 200 OK in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-04-03 20:06:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (38.9ms)
+Completed 200 OK in 393ms (Views: 373.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=1&commit=New+Document" for ::1 at 2020-04-03 20:06:19 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"1", "commit"=>"New Document"}
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1_untitled_5"], ["user_id", 1], ["created_at", "2020-04-04 00:06:19.297816"], ["updated_at", "2020-04-04 00:06:19.297816"]]
+  [1m[35m (1.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/documents/6
+Completed 302 Found in 30ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/documents/6" for ::1 at 2020-04-03 20:06:19 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDocument Load (1.6ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mDocument Load (0.7ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (23.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 65ms (Views: 57.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/documents/change_doc?file_name=1_untitled_3" for ::1 at 2020-04-03 20:06:22 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"1_untitled_3"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "1_untitled_3"]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-04-03 20:07:52 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 166ms (Views: 163.5ms | ActiveRecord: 1.8ms)

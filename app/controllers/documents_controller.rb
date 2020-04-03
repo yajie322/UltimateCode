@@ -23,9 +23,9 @@ class DocumentsController < ApplicationController
     @theme = [['Select Theme','ambiance'], ['Ambiance','ambiance'], ['Chaos','chaos'], ['Dracula','dracula'], ['Cobalt','cobalt'], ['Terminal','terminal'], ['Twilight','twilight'], ['Monokai','monokai'], ['Chrome','chrome'], ['Dawn','dawn'], ['Github','github'], ['Xcode','xcode'],]
     @font_size = [['Font Size', 12], ['12', 12], ['14', 14], ['16', 16], ['18', 18], ['20', 20], ['40', 40], ['80', 80]]
     @document ||= Document.find(params[:id])
-    @doc_name = @document.user_id.to_s + '_untitled_' + @count.to_s
     @document_list = []
-    document = Document.where(user_id: params[:user_id])
+    document = Document.where(user_id: @document.user_id)
+    @doc_name = @document.name
     document.each do |doc|
         @document_list.append([doc.name, doc.name])
     end
