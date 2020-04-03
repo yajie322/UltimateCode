@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'home', to: 'home#show'
+  get '/documents/change_doc', to: 'documents#change_doc'
   put 'documents/edit_doc_name' => 'documents#edit_doc_name'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :documents

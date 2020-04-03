@@ -181,7 +181,13 @@ textarea {
   width:120px;
   height: 35px;
 }
-
+#selector5{
+  margin-left: 30px;
+  border: 2px solid #ccc;
+  border-radius: 0px;
+  width:120px;
+  height: 35px;
+}
 #editor {
   margin: auto;
   position: absolute;

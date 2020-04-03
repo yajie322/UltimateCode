@@ -10,11 +10,11 @@
         %label{:for => "docment_name", id: "label"} 
           %i{class:"fas fa-file-alt", id:"file_icon"}
         %input#docment_name_input{:onblur => "updateDocName()", :name => "docment_name", :type => "text"} 
+        = select_tag :p_style, options_for_select(@document_list, :selected => @doc_name), :id => "selector5"
       
       = select_tag :p_font, options_for_select(@font_size), :id => "selector4"
       = select_tag :pl, options_for_select(@programming_languages), :id => "selector3"
       = select_tag :p_style, options_for_select(@theme), :id => "selector2"
-
       %label{class:"switch"}
         %input{type:"checkbox", id:"switch"}
         %span{class:"slider"} 
