@@ -24,6 +24,11 @@ class DocumentsController < ApplicationController
     @font_size = [['Font Size', 12], ['12', 12], ['14', 14], ['16', 16], ['18', 18], ['20', 20], ['40', 40], ['80', 80]]
     @document ||= Document.find(params[:id])
     @doc_name = @document.user_id.to_s + '_untitled_' + @count.to_s
+    @document_list = []
+    document = Document.where(user_id: params[:user_id])
+    document.each do |doc|
+        @document_list.append([doc.name, doc.name])
+    end
   end
 
   def update
@@ -66,5 +71,19 @@ class DocumentsController < ApplicationController
       flash[:notice] = "User doesn't exist."
     end
       redirect_to document_path(@document)
+  end
+  def change_doc
+    doc = Document.find_by(name: params['file_name'])
+    if doc
+        respond_to do |format|
+            msg = { :status => "ok", :content => doc.content}
+            format.json { render json: msg }
+        end
+    else
+        respond_to do |format|
+            msg = { :status => "err", :message => "file not exist!"}
+            format.json { render json: msg }
+        end
+    end
   end
 end

@@ -161,13 +161,15 @@ textarea {
 
 }
 #selector4{
-  margin-left: 150px;
+  background-color: white;
+  margin-left: 85px;
   border: 2px solid #ccc;
   border-radius: 0px;
   width:120px;
   height: 35px;
 }
 #selector2{
+  background-color: white;
   border: 2px solid #ccc;
   margin-left: 30px;
   border-radius: 0px;
@@ -175,13 +177,21 @@ textarea {
   height: 35px;
 }
 #selector3{
+  background-color: white;
   margin-left: 30px;
   border: 2px solid #ccc;
   border-radius: 0px;
   width:120px;
   height: 35px;
 }
-
+#selector5{
+  background-color: white;
+  margin-left: 30px;
+  border: 2px solid #ccc;
+  border-radius: 0px;
+  width:120px;
+  height: 35px;
+}
 #editor {
   margin: auto;
   position: absolute;
@@ -191,7 +201,7 @@ textarea {
   right: 0;
   margin-top: 100px;
   border: 0.1em solid #ffffff;
-  width: 77%;
+  width: 70%;
   height: 650px;
   
 }
@@ -275,7 +285,7 @@ input:checked + .slider:before {
 }
 #file_icon{
   display: block;
-  font-size:20px;
+  font-size:25px;
   color:white;
 }
 .fa-google {
@@ -297,26 +307,26 @@ input:checked + .slider:before {
 }
 .navBtn{
   position: relative;
+  z-index:2;
   float:right;
   margin: 15px;
+  margin-top: 7px;
   padding: 10px;
   color:black;
   font-size: 15px;
   border: 0.1em solid black;
   font-family: 'Josefin Sans', sans-serif;
 }
-
-#docment_name{
+#docment_name_input{
     width:120px;
     margin-left: 10px;
     padding: 7px;
     color: black;
-    height: 35px;
+    height: 37px;
     border: 4px solid #ccc;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 15px;
 }
-
 #invite{
   cursor: pointer;
   position: relative;
@@ -330,10 +340,20 @@ input:checked + .slider:before {
 }
 
 .doc_name{
-  
+  margin-left: 80px;
   padding: 14px;
-  
-  background-color: #ccc;
-  border:  1px solid white;
 
+  background-color: #ccc;
+  border:  2px solid white;
+  border-radius:  2px;
+
+}
+.all{
+  z-index: 0;
+  margin-top: 35px;
+  margin-left: 216px;
+  margin-right: 216px;
+  border:2px solid white;
+  background-color: #ccc;
+  padding-bottom: 60px;
 }

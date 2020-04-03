@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'auth/failure', to: redirect('/')
   put 'documents/:id/edit_doc_name(.:format)' => 'documents#edit_doc_name'
   get 'documents/:id/add_collaborator/:email(.:format)' => 'documents#add_collaborator'
+  get 'documents/change_doc', to: 'documents#change_doc'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :documents
 

@@ -1,7 +1,9 @@
 $(document).ready(function(){
     //for editor
     var editor = ace.edit("editor");
+    // set document textbox default value
     $('#docment_name_input').val($('#doc_name').val())
+    //detect textarea change
     editor.session.on('change', function(){
         $.ajax({
             url: $(location).attr('href'),
@@ -18,6 +20,32 @@ $(document).ready(function(){
             }
         });
       });
+    //detect select file change
+    $('#selector5').on('change', function() {
+        var selected = this.value;
+        $.ajax({
+            url: '/documents/change_doc',
+            type: "GET",
+            data: {'file_name' : selected},
+            dataType: "text",
+            success: function(data) {
+                //alert('successfully');
+                result = $.parseJSON(data);
+                if (result.status.toString() == 'ok') {
+                    $('#doc_name').val(selected)
+                    $('#docment_name_input').val(selected)
+                    ace.edit("editor").setValue(result.content.toString(), 1)
+                    //alert(result.content.toString())
+                } else {
+                    alert(result.message.toString())
+                }
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+                alert(xhr.status);
+                alert(thrownError);
+            }
+        });
+    });
 });
 
 function updateDocName() {

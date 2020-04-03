@@ -13,6 +13,7 @@
     = csrf_meta_tags
 
     %body
+      
       - if logged_in?
         = link_to logout_path do
           %span{class: "navBtn", :id => "signOut"}
