@@ -3,9 +3,8 @@ $(document).ready(function(){
     var editor = ace.edit("editor");
     $('#docment_name_input').val($('#doc_name').val())
     editor.session.on('change', function(){
-        var url = "/documents/"+$('#doc_name').val();
         $.ajax({
-            url: url,
+            url: $(location).attr('href'),
             type: "PUT",
             data: {"content" : editor.session.getValue()},
             dataType: "text",
@@ -26,7 +25,7 @@ function updateDocName() {
   var old_name = $('#doc_name').val()
   //alert(old_name)
   $.ajax({
-        url: '/documents/edit_doc_name',
+        url: $(location).attr('href') + '/edit_doc_name',
         type: "PUT",
         data: {'new_doc_name' : new_name, 'old_doc_name' : old_name},
         dataType: "text",

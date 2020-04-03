@@ -1,27 +1,6 @@
 ace.require("ace/ext/language_tools");
 var bool_gutter = true
 window.onload = function () {
-      // your code 
-      var modal = document.getElementById("myModal");
-
-      var span = document.getElementsByClassName("close")[0];
-
-
-      document.getElementById("invite").onclick = function () {
-            console.log("hi");
-            modal.style.display = "block";
-      }
-      span.onclick = function () {
-            modal.style.display = "none";
-      }
-
-      window.onclick = function (event) {
-            if (event.target == modal) {
-                  modal.style.display = "none";
-            }
-      }
-
-
       var editor = ace.edit("editor");
 
       editor.setTheme("ace/theme/ambiance");
@@ -58,7 +37,6 @@ window.onload = function () {
                   editor.setOptions({
                         fontSize: font_num
                   })
-
             }
       });
 
@@ -68,10 +46,6 @@ window.onload = function () {
             editor.setOption('showLineNumbers', bool_gutter);
             //editor.renderer.setShowGutter(bool_gutter)
       }
-
-
-
-
 };
 
 
