@@ -6432,3 +6432,220 @@ Processing by UltimatecodeController#index as HTML
   [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
   Rendered ultimatecode/index.html.haml within layouts/application (3.5ms)
 Completed 200 OK in 166ms (Views: 163.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=1&commit=New+Document" for ::1 at 2020-04-03 20:12:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"1", "commit"=>"New Document"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "1_untitled_6"], ["user_id", 1], ["created_at", "2020-04-04 00:12:45.062617"], ["updated_at", "2020-04-04 00:12:45.062617"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/documents/7
+Completed 302 Found in 55ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/documents/7" for ::1 at 2020-04-03 20:12:45 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (16.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 618ms (Views: 608.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/updateDocument.self-88ddfd3bebaad3bfe5fe0523473d6e4dc2a96c3e66ea1ecff208c11573a051fd.js?body=1" for ::1 at 2020-04-03 20:12:45 -0400
+
+
+Started GET "/documents/7/change_doc?file_name=1_untitled_5" for ::1 at 2020-04-03 20:12:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/documents/7/change_doc"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (47.1ms)
+
+
+Started GET "/documents/7/change_doc?file_name=1_untitled_4" for ::1 at 2020-04-03 20:12:53 -0400
+
+ActionController::RoutingError (No route matches [GET] "/documents/7/change_doc"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (39.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-03 20:23:26 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (40.9ms)
+Completed 200 OK in 187ms (Views: 182.4ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=1&commit=New+Document" for ::1 at 2020-04-03 20:23:30 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"1", "commit"=>"New Document"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "1_untitled_7"], ["user_id", 1], ["created_at", "2020-04-04 00:23:30.192284"], ["updated_at", "2020-04-04 00:23:30.192284"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/documents/8
+Completed 302 Found in 17ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/documents/8" for ::1 at 2020-04-03 20:23:30 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (1.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/documents/8/edit_doc_name" for ::1 at 2020-04-03 20:23:32 -0400
+Processing by DocumentsController#edit_doc_name as TEXT
+  Parameters: {"new_doc_name"=>"1_untitled_7s", "old_doc_name"=>"1_untitled_7", "id"=>"8"}
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "1_untitled_7"]]
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "1_untitled_7s"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "documents" SET "name" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["name", "1_untitled_7s"], ["updated_at", "2020-04-04 00:23:32.964424"], ["id", 8]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to 
+Completed 500 Internal Server Error in 11ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/documents_controller.rb:62:in `edit_doc_name'
+
+
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (122.7ms)
+
+
+Started GET "/documents/8" for ::1 at 2020-04-03 20:24:30 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 86ms (Views: 64.5ms | ActiveRecord: 5.4ms)
+
+
+Started PUT "/documents/8/edit_doc_name" for ::1 at 2020-04-03 20:24:33 -0400
+Processing by DocumentsController#edit_doc_name as TEXT
+  Parameters: {"new_doc_name"=>"1_untitled_7", "old_doc_name"=>"1_untitled_7s", "id"=>"8"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "1_untitled_7s"]]
+  [1m[35mDocument Load (0.5ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "1_untitled_7"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "documents" SET "name" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["name", "1_untitled_7"], ["updated_at", "2020-04-04 00:24:33.957353"], ["id", 8]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started PUT "/documents/8/edit_doc_name" for ::1 at 2020-04-03 20:24:39 -0400
+Processing by DocumentsController#edit_doc_name as TEXT
+  Parameters: {"new_doc_name"=>"1_untitled_78", "old_doc_name"=>"1_untitled_7", "id"=>"8"}
+  [1m[35mDocument Load (0.4ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "1_untitled_7"]]
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "1_untitled_78"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "documents" SET "name" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["name", "1_untitled_78"], ["updated_at", "2020-04-04 00:24:39.958114"], ["id", 8]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/documents/8/change_doc?file_name=1_untitled_6" for ::1 at 2020-04-03 20:24:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/documents/8/change_doc"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (49.8ms)

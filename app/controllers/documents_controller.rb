@@ -59,10 +59,9 @@ class DocumentsController < ApplicationController
             end
         end
     end
-    redirect_to document_path(params[:id])
   end
 
-  def add_collaborator()
+  def add_collaborator
     user = User.find_by_email(params[:email])
     @document ||= Document.find(params[:id])
     if user
@@ -72,6 +71,7 @@ class DocumentsController < ApplicationController
     end
       redirect_to document_path(@document)
   end
+
   def change_doc
     doc = Document.find_by(name: params['file_name'])
     if doc
