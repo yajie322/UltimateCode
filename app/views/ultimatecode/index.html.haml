@@ -4,7 +4,7 @@
     = form_tag new_document_path, :id => "new_document", :method => :get do
       = hidden_field_tag :user_id, session[:user_id]
       = submit_tag 'New Document', :class => "btn"
-    
+    = select_tag :h_f_selector, options_for_select(@document_list), :id => "home_file_selector"
   - else
     %div{id: "sign_in"} Sign in with your:
     %div{class: "icon"}

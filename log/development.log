@@ -6649,3 +6649,1588 @@ ActionController::RoutingError (No route matches [GET] "/documents/8/change_doc"
 
   Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
   Rendered /Users/yajiezhao/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (49.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 15:58:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 911ms (Views: 907.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2020-04-23 15:58:41 -0400
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2020-04-23 15:58:42 -0400
+
+
+Started GET "/auth/google_oauth2/callback?state=ec929299039f877160d266db6416503496d919f961c885de&code=4%2FzAEEi6Q2yeoZn6ZbOMbGE3UBRm7yQfbwbJGQa7YWrZxYoiSxohqhI_ThU9cvQ38mFzedwm4_3QornTM8Ogc9mMo&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 127.0.0.1 at 2020-04-23 15:58:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"ec929299039f877160d266db6416503496d919f961c885de", "code"=>"4/zAEEi6Q2yeoZn6ZbOMbGE3UBRm7yQfbwbJGQa7YWrZxYoiSxohqhI_ThU9cvQ38mFzedwm4_3QornTM8Ogc9mMo", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "google_oauth2"], ["uid", "116319042771421399666"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 15:58:42 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=2&commit=New+Document" for 127.0.0.1 at 2020-04-23 15:58:44 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"2", "commit"=>"New Document"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "2_untitled_25"], ["user_id", 2], ["created_at", "2020-04-23 19:58:44.036591"], ["updated_at", "2020-04-23 19:58:44.036591"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/documents/85
+Completed 302 Found in 11ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/documents/85" for 127.0.0.1 at 2020-04-23 15:58:44 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"85"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered documents/show.html.haml within layouts/application (12.0ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_13" for 127.0.0.1 at 2020-04-23 15:58:46 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_13"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_13"]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_21" for 127.0.0.1 at 2020-04-23 15:58:47 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_21"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_21"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_10" for 127.0.0.1 at 2020-04-23 15:58:48 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_10"}
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_10"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_9" for 127.0.0.1 at 2020-04-23 15:58:49 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_9"}
+  [1m[35mDocument Load (0.6ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_9"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_24" for 127.0.0.1 at 2020-04-23 15:58:53 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_24"}
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_24"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:58:53 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sq", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sq"], ["updated_at", "2020-04-23 19:58:53.091964"], ["id", 85]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (2.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 2.3ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:58:55 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqs", "id"=>"85"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sqs"], ["updated_at", "2020-04-23 19:58:55.767469"], ["id", 85]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 19ms (Views: 14.0ms | ActiveRecord: 2.2ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:58:55 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqss", "id"=>"85"}
+  [1m[35mDocument Load (0.4ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sqss"], ["updated_at", "2020-04-23 19:58:55.944938"], ["id", 85]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:58:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqsss", "id"=>"85"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sqsss"], ["updated_at", "2020-04-23 19:58:56.106406"], ["id", 85]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 1.8ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:58:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqssss", "id"=>"85"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sqssss"], ["updated_at", "2020-04-23 19:58:56.247227"], ["id", 85]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 2.3ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:58:56 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqsssss", "id"=>"85"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sqsssss"], ["updated_at", "2020-04-23 19:58:56.404037"], ["id", 85]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_25" for 127.0.0.1 at 2020-04-23 15:58:58 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_25"}
+  [1m[35mDocument Load (0.6ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_25"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:58:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", ""], ["updated_at", "2020-04-23 19:58:58.417244"], ["id", 85]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:58:58 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqsssss", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sqsssss"], ["updated_at", "2020-04-23 19:58:58.435589"], ["id", 85]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_24" for 127.0.0.1 at 2020-04-23 15:59:00 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_24"}
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_24"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:00 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", ""], ["updated_at", "2020-04-23 19:59:00.302461"], ["id", 85]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 2.2ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:00 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sq", "id"=>"85"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sq"], ["updated_at", "2020-04-23 19:59:00.321428"], ["id", 85]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_25" for 127.0.0.1 at 2020-04-23 15:59:02 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_25"}
+  [1m[35mDocument Load (0.6ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_25"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:02 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", ""], ["updated_at", "2020-04-23 19:59:02.706155"], ["id", 85]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 21ms (Views: 15.6ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:02 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sq", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sq"], ["updated_at", "2020-04-23 19:59:02.729995"], ["id", 85]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_24" for 127.0.0.1 at 2020-04-23 15:59:04 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_24"}
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_24"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:04 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", ""], ["updated_at", "2020-04-23 19:59:04.551499"], ["id", 85]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:04 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sq", "id"=>"85"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sq"], ["updated_at", "2020-04-23 19:59:04.574314"], ["id", 85]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_9" for 127.0.0.1 at 2020-04-23 15:59:07 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_9"}
+  [1m[35mDocument Load (1.0ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_9"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:07 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[36mDocument Load (1.1ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", ""], ["updated_at", "2020-04-23 19:59:07.201109"], ["id", 85]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 19ms (Views: 13.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_24" for 127.0.0.1 at 2020-04-23 15:59:10 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_24"}
+  [1m[35mDocument Load (0.8ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_24"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:10 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sq", "id"=>"85"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sq"], ["updated_at", "2020-04-23 19:59:10.431054"], ["id", 85]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_25" for 127.0.0.1 at 2020-04-23 15:59:12 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_25"}
+  [1m[35mDocument Load (0.8ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_25"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:12 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", ""], ["updated_at", "2020-04-23 19:59:12.080792"], ["id", 85]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 19ms (Views: 13.4ms | ActiveRecord: 2.1ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:12 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sq", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sq"], ["updated_at", "2020-04-23 19:59:12.101405"], ["id", 85]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:14 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqq", "id"=>"85"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sqq"], ["updated_at", "2020-04-23 19:59:14.640183"], ["id", 85]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 1.8ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:14 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqqq", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sqqq"], ["updated_at", "2020-04-23 19:59:14.831869"], ["id", 85]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqqqq", "id"=>"85"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sqqqq"], ["updated_at", "2020-04-23 19:59:15.015779"], ["id", 85]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqqqqq", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sqqqqq"], ["updated_at", "2020-04-23 19:59:15.151724"], ["id", 85]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 17ms (Views: 12.4ms | ActiveRecord: 2.0ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqqqqqq", "id"=>"85"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sqqqqqq"], ["updated_at", "2020-04-23 19:59:15.319448"], ["id", 85]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqqqqqqq", "id"=>"85"}
+  [1m[35mDocument Load (0.4ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sqqqqqqq"], ["updated_at", "2020-04-23 19:59:15.522598"], ["id", 85]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.3ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 25ms (Views: 17.0ms | ActiveRecord: 3.4ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqqqqqqqq", "id"=>"85"}
+  [1m[36mDocument Load (1.0ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sqqqqqqqq"], ["updated_at", "2020-04-23 19:59:15.704763"], ["id", 85]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 24ms (Views: 12.2ms | ActiveRecord: 5.5ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqqqqqqqqq", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sqqqqqqqqq"], ["updated_at", "2020-04-23 19:59:15.811886"], ["id", 85]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:15 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqqqqqqqqqq", "id"=>"85"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sqqqqqqqqqq"], ["updated_at", "2020-04-23 19:59:15.974053"], ["id", 85]]
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 2.9ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:16 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sqqqqqqqqqqq", "id"=>"85"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sqqqqqqqqqqq"], ["updated_at", "2020-04-23 19:59:16.142134"], ["id", 85]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_6" for 127.0.0.1 at 2020-04-23 15:59:17 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_6"}
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_6"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:17 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", ""], ["updated_at", "2020-04-23 19:59:17.478658"], ["id", 85]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_25" for 127.0.0.1 at 2020-04-23 15:59:19 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_25"}
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_25"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_24" for 127.0.0.1 at 2020-04-23 15:59:23 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_24"}
+  [1m[35mDocument Load (1.1ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_24"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:23 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sq", "id"=>"85"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "sq"], ["updated_at", "2020-04-23 19:59:23.415761"], ["id", 85]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_25" for 127.0.0.1 at 2020-04-23 15:59:25 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_25"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_25"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:25 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 85]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", ""], ["updated_at", "2020-04-23 19:59:25.895440"], ["id", 85]]
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 2.8ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:25 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sq", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sq"], ["updated_at", "2020-04-23 19:59:25.914772"], ["id", 85]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_9" for 127.0.0.1 at 2020-04-23 15:59:27 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_9"}
+  [1m[36mDocument Load (1.0ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_9"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:27 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", ""], ["updated_at", "2020-04-23 19:59:27.367420"], ["id", 85]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_24" for 127.0.0.1 at 2020-04-23 15:59:29 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_24"}
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_24"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:29 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"sq", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", "sq"], ["updated_at", "2020-04-23 19:59:29.990391"], ["id", 85]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_7" for 127.0.0.1 at 2020-04-23 15:59:30 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_7"}
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_7"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/documents/85" for 127.0.0.1 at 2020-04-23 15:59:30 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"85"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 85]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3  [["content", ""], ["updated_at", "2020-04-23 19:59:30.982352"], ["id", 85]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_25" for 127.0.0.1 at 2020-04-23 15:59:33 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_25"}
+  [1m[36mDocument Load (0.9ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_25"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_15" for 127.0.0.1 at 2020-04-23 16:00:47 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_15"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_15"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_12" for 127.0.0.1 at 2020-04-23 16:00:49 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_12"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_12"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_1" for 127.0.0.1 at 2020-04-23 16:00:52 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_1"}
+  [1m[35mDocument Load (0.7ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_1"]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_8" for 127.0.0.1 at 2020-04-23 16:00:53 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_8"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_8"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_11" for 127.0.0.1 at 2020-04-23 16:00:54 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_11"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_11"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 16:46:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (31.1ms)
+Completed 200 OK in 316ms (Views: 302.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:20:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (20.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"documents"} missing required keys: [:id]):
+    4:     = form_tag new_document_path, :id => "new_document", :method => :get do
+    5:       = hidden_field_tag :user_id, session[:user_id]
+    6:       = submit_tag 'New Document', :class => "btn"
+    7:     = form_tag document_path, :id => "get_docment", :method => :get do
+    8:       = select_tag :p_style, options_for_select(@document_list, :selected => @doc_name), :id => "home_file_selector"
+    9:   - else
+   10:     %div{id: "sign_in"} Sign in with your:
+  app/views/ultimatecode/index.html.haml:7:in `_app_views_ultimatecode_index_html_haml___91519855348104152_47139055632100'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:20:49 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"documents"} missing required keys: [:id]):
+    4:     = form_tag new_document_path, :id => "new_document", :method => :get do
+    5:       = hidden_field_tag :user_id, session[:user_id]
+    6:       = submit_tag 'New Document', :class => "btn"
+    7:     = form_tag document_path, :id => session[:user_id], :method => :get do
+    8:       = select_tag :p_style, options_for_select(@document_list, :selected => @doc_name), :id => "home_file_selector"
+    9:   - else
+   10:     %div{id: "sign_in"} Sign in with your:
+  app/views/ultimatecode/index.html.haml:7:in `_app_views_ultimatecode_index_html_haml___91519855348104152_47139048724880'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.8ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:22:16 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    4:     = form_tag new_document_path, :id => "new_document", :method => :get do
+    5:       = hidden_field_tag :user_id, session[:user_id]
+    6:       = submit_tag 'New Document', :class => "btn"
+    7:     = select_tag :p_style, options_for_select(@document_list, :selected => @doc_name), :id => "home_file_selector"
+    8:   - else
+    9:     %div{id: "sign_in"} Sign in with your:
+   10:     %div{class: "icon"}
+  app/views/ultimatecode/index.html.haml:7:in `_app_views_ultimatecode_index_html_haml___91519855348104152_69877177653920'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (20.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:22:37 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    4:     = form_tag new_document_path, :id => "new_document", :method => :get do
+    5:       = hidden_field_tag :user_id, session[:user_id]
+    6:       = submit_tag 'New Document', :class => "btn"
+    7:     = select_tag :p_style, options_for_select(@document_list, :selected => @doc_name), :id => "home_file_selector"
+    8:   - else
+    9:     %div{id: "sign_in"} Sign in with your:
+   10:     %div{class: "icon"}
+  app/views/ultimatecode/index.html.haml:7:in `_app_views_ultimatecode_index_html_haml___91519855348104152_69877177653920'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.6ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.6ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (19.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:23:23 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    4:     = form_tag new_document_path, :id => "new_document", :method => :get do
+    5:       = hidden_field_tag :user_id, session[:user_id]
+    6:       = submit_tag 'New Document', :class => "btn"
+    7:     = select_tag :p_style, options_for_select(@document_list), :id => "home_file_selector"
+    8:   - else
+    9:     %div{id: "sign_in"} Sign in with your:
+   10:     %div{class: "icon"}
+  app/views/ultimatecode/index.html.haml:7:in `_app_views_ultimatecode_index_html_haml___91519855348104152_69877175756100'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.0ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:24:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (20.9ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    4:     = form_tag new_document_path, :id => "new_document", :method => :get do
+    5:       = hidden_field_tag :user_id, session[:user_id]
+    6:       = submit_tag 'New Document', :class => "btn"
+    7:     = select_tag :p_style, options_for_select(@document_list), :id => "home_file_selector"
+    8:   - else
+    9:     %div{id: "sign_in"} Sign in with your:
+   10:     %div{class: "icon"}
+  app/views/ultimatecode/index.html.haml:7:in `_app_views_ultimatecode_index_html_haml__3763984677787582307_47354381870940'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.0ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:25:08 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `a' for #<#<Class:0x0056231a5e3a10>:0x0056231b9482b8>):
+    4:     = form_tag new_document_path, :id => "new_document", :method => :get do
+    5:       = hidden_field_tag :user_id, session[:user_id]
+    6:       = submit_tag 'New Document', :class => "btn"
+    7:     = select_tag :p_style, options_for_select([a,a]), :id => "home_file_selector"
+    8:   - else
+    9:     %div{id: "sign_in"} Sign in with your:
+   10:     %div{class: "icon"}
+  app/views/ultimatecode/index.html.haml:7:in `_app_views_ultimatecode_index_html_haml__3763984677787582307_70190368896600'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:25:23 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 113ms (Views: 112.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=2&commit=New+Document" for 127.0.0.1 at 2020-04-23 18:25:25 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"2", "commit"=>"New Document"}
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "2_untitled_26"], ["user_id", 2], ["created_at", "2020-04-23 22:25:25.752207"], ["updated_at", "2020-04-23 22:25:25.752207"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/documents/86
+Completed 302 Found in 16ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/documents/86" for 127.0.0.1 at 2020-04-23 18:25:25 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"86"}
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 86]]
+  [1m[35mDocument Load (0.2ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 2]]
+  Rendered documents/show.html.haml within layouts/application (5.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2020-04-23 18:25:28 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:25:28 -0400
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:25:47 -0400
+Processing by UltimatecodeController#index as HTML
+  Rendered ultimatecode/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2020-04-23 18:25:54 -0400
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2020-04-23 18:25:55 -0400
+
+
+Started GET "/auth/google_oauth2/callback?state=5c88943a67aa0d5663c5ad3f78ba26ddb9f7e531926961d7&code=4%2FzAExBBHk_rQ89sV1XgM_XFW5m9T8tjHpxCfFHujL-976MwH3cllZ8qaPpPxHsSrqWoaz3xCt3mM56tFtF0R3n54&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent" for 127.0.0.1 at 2020-04-23 18:26:03 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"5c88943a67aa0d5663c5ad3f78ba26ddb9f7e531926961d7", "code"=>"4/zAExBBHk_rQ89sV1XgM_XFW5m9T8tjHpxCfFHujL-976MwH3cllZ8qaPpPxHsSrqWoaz3xCt3mM56tFtF0R3n54", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"consent", "provider"=>"google_oauth2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "google_oauth2"], ["uid", "116319042771421399666"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:26:04 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    4:     = form_tag new_document_path, :id => "new_document", :method => :get do
+    5:       = hidden_field_tag :user_id, session[:user_id]
+    6:       = submit_tag 'New Document', :class => "btn"
+    7:     = select_tag :p_style, options_for_select(@document_list), :id => "home_file_selector"
+    8:   - else
+    9:     %div{id: "sign_in"} Sign in with your:
+   10:     %div{class: "icon"}
+  app/views/ultimatecode/index.html.haml:7:in `_app_views_ultimatecode_index_html_haml__3763984677787582307_70190384461740'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (9.9ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (19.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:26:58 -0400
+
+SyntaxError (/home/kc3317/ASE/UltimateCode/app/controllers/ultimatecode_controller.rb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/ultimatecode_controller.rb:9: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.7ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:27:24 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 25ms (Views: 17.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2020-04-23 18:27:31 -0400
+
+SyntaxError (/home/kc3317/ASE/UltimateCode/app/controllers/sessions_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/sessions_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (21.9ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2020-04-23 18:28:06 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:28:06 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" IS NULL
+  Rendered ultimatecode/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2020-04-23 18:28:07 -0400
+
+
+Started GET "/auth/google_oauth2" for 127.0.0.1 at 2020-04-23 18:28:08 -0400
+
+
+Started GET "/auth/google_oauth2/callback?state=aadbaf4ca1f59fee1e41a0e8b1b601de62820326e6725aeb&code=4%2FzAEbI5oso6wTIC-ZLBQcl6-ZshOfUNVESJqwu0JG5eXGjxKAUN4Xoj0NgwZ4iPo_MhI2Uoyg7C4kP6qEBGcj-a8&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for 127.0.0.1 at 2020-04-23 18:28:08 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"aadbaf4ca1f59fee1e41a0e8b1b601de62820326e6725aeb", "code"=>"4/zAEbI5oso6wTIC-ZLBQcl6-ZshOfUNVESJqwu0JG5eXGjxKAUN4Xoj0NgwZ4iPo_MhI2Uoyg7C4kP6qEBGcj-a8", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "prompt"=>"none", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1[0m  [["provider", "google_oauth2"], ["uid", "116319042771421399666"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:28:08 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:39:59 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 59ms (Views: 51.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/homeFileSelector.self-aab00a855d2e22d182070db5accb96e269981419c8fd0f3e66ff2ffe80406855.js?body=1" for 127.0.0.1 at 2020-04-23 18:39:59 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:40:44 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/homeFileSelector.self-de202c1be80bb824717bb9e396b4b7337186ecbd1c0ba91482f3e69f8897f4e7.js?body=1" for 127.0.0.1 at 2020-04-23 18:40:44 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:41:13 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:41:32 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/homeFileSelector.self-7c286bcdb6b1a0cfbd1fdadfc1075f1eec65b9c51bdd993fcea2341a1d1c62b4.js?body=1" for 127.0.0.1 at 2020-04-23 18:41:32 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:42:04 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/homeFileSelector.self-84944893d704533b09cf2b085f09659b4a20fc6aff642d787c82a0634203c4bc.js?body=1" for 127.0.0.1 at 2020-04-23 18:42:05 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=2&commit=New+Document" for 127.0.0.1 at 2020-04-23 18:43:03 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"2", "commit"=>"New Document"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "2_untitled_27"], ["user_id", 2], ["created_at", "2020-04-23 22:43:03.043127"], ["updated_at", "2020-04-23 22:43:03.043127"]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/documents/87
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/documents/87" for 127.0.0.1 at 2020-04-23 18:43:03 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"87"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 87]]
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 2]]
+  Rendered documents/show.html.haml within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_3" for 127.0.0.1 at 2020-04-23 18:43:05 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_3"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_3"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/documents/87" for 127.0.0.1 at 2020-04-23 18:43:05 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"ssdasdasdasd", "id"=>"87"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 87]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", "ssdasdasdasd"], ["updated_at", "2020-04-23 22:43:05.017352"], ["id", 87]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (1.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 20ms (Views: 13.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_4" for 127.0.0.1 at 2020-04-23 18:43:06 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_4"}
+  [1m[35mDocument Load (1.4ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "2_untitled_4"]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/documents/87" for 127.0.0.1 at 2020-04-23 18:43:06 -0400
+Processing by DocumentsController#update as TEXT
+  Parameters: {"content"=>"", "id"=>"87"}
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 87]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "documents" SET "content" = $1, "updated_at" = $2 WHERE "documents"."id" = $3[0m  [["content", ""], ["updated_at", "2020-04-23 22:43:06.484285"], ["id", 87]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered documents/update.html.haml within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=2&commit=New+Document" for 127.0.0.1 at 2020-04-23 18:43:38 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"2", "commit"=>"New Document"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "2_untitled_28"], ["user_id", 2], ["created_at", "2020-04-23 22:43:38.930890"], ["updated_at", "2020-04-23 22:43:38.930890"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/documents/88
+Completed 302 Found in 3ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/documents/88" for 127.0.0.1 at 2020-04-23 18:43:38 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"88"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 88]]
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered documents/show.html.haml within layouts/application (0.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/documents/change_doc?file_name=2_untitled_7" for 127.0.0.1 at 2020-04-23 18:43:44 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"2_untitled_7"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "2_untitled_7"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:45:35 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 24ms (Views: 17.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=2&commit=New+Document" for 127.0.0.1 at 2020-04-23 18:45:55 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"2", "commit"=>"New Document"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "2_untitled_29"], ["user_id", 2], ["created_at", "2020-04-23 22:45:55.294353"], ["updated_at", "2020-04-23 22:45:55.294353"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/documents/89
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/documents/89" for 127.0.0.1 at 2020-04-23 18:45:55 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"89"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 89]]
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  Rendered documents/show.html.haml within layouts/application (0.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:48:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 204ms (Views: 186.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/homeFileSelector.self-550256702fd554b59efc6c0f522aac331f51d7a0b93ef2d8206d5fa934ed1336.js?body=1" for 127.0.0.1 at 2020-04-23 18:48:19 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:48:47 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/homeFileSelector.self-d7ddcf8ae6158995a56e1734c113f82262cf70e76a328865343ba162f1865228.js?body=1" for 127.0.0.1 at 2020-04-23 18:48:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:49:33 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/home/kc3317/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:7: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+ns_for_select(@document_list), :id => "home_file_selector"
+                              ^):
+  app/views/ultimatecode/index.html.haml:7: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.0ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (11.6ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:49:44 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:49:59 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+SyntaxError (/home/kc3317/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:7: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+html_escape((( select_tag :456, options_for_select(@document
+                              ^
+/home/kc3317/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:7: syntax error, unexpected ',', expecting ')'
+ns_for_select(@document_list), :id => "home_file_selector"
+                              ^):
+  app/views/ultimatecode/index.html.haml:7: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+  app/views/ultimatecode/index.html.haml:7: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.0ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (10.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/kc3317/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (20.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:50:15 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:52:03 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 30ms (Views: 21.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:54:15 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:55:18 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/homeFileSelector.self-2d64e69db3687c8a7432be14d24c04aeebabf6a2932cefcc901f07459fcdd6f7.js?body=1" for 127.0.0.1 at 2020-04-23 18:55:18 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:55:43 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/homeFileSelector.self-c62403034afd1629733157123d0489652442bd8792745476ac045b2f3a3a08f8.js?body=1" for 127.0.0.1 at 2020-04-23 18:55:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:56:16 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/homeFileSelector.self-852b49a04bed9acfd3759a0e6397ac2027ea3ec66aae35b75ec03fdc970d3bbf.js?body=1" for 127.0.0.1 at 2020-04-23 18:56:16 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:56:57 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/homeFileSelector.self-ebd8aba441bf8d8db2820505ae8fb3233059fc96fe359876508609bc40ab8b04.js?body=1" for 127.0.0.1 at 2020-04-23 18:56:57 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=2&commit=New+Document" for 127.0.0.1 at 2020-04-23 18:57:02 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"2", "commit"=>"New Document"}
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "2_untitled_30"], ["user_id", 2], ["created_at", "2020-04-23 22:57:02.561007"], ["updated_at", "2020-04-23 22:57:02.561007"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/documents/90
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/documents/90" for 127.0.0.1 at 2020-04-23 18:57:02 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 90]]
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  Rendered documents/show.html.haml within layouts/application (8.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:57:58 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/homeFileSelector.self-6a3e9b784ddb603e565e78fcc75533a6800329fbf68c13257de73aabb111c948.js?body=1" for 127.0.0.1 at 2020-04-23 18:57:58 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:58:23 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/homeFileSelector.self-dcebcad79aded0a349817afb35673dd158d63bbce15afc136ddadf709f488858.js?body=1" for 127.0.0.1 at 2020-04-23 18:58:23 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:58:32 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:59:02 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/homeFileSelector.self-d5949a95ab807d2913e97ddd1040510bf18db38e4a12b778574d2f3872ca8e54.js?body=1" for 127.0.0.1 at 2020-04-23 18:59:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:59:23 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/homeFileSelector.self-dea132a4a7a364c3305f2cf0407f46b8461ca15887e50f7d1e1ca37e89598823.js?body=1" for 127.0.0.1 at 2020-04-23 18:59:23 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:59:43 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/homeFileSelector.self-57015485d34f656bba31e6c244adefe5274f46d62e853f044844a3e69fa70f54.js?body=1" for 127.0.0.1 at 2020-04-23 18:59:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 18:59:52 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/homeFileSelector.self-125635b65a13e807ea35f8de07da291bf191de22e579068168f04729c33f5ed8.js?body=1" for 127.0.0.1 at 2020-04-23 18:59:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-23 19:00:41 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/homeFileSelector.self-4d2400f4fde19dec912af91ee0c2116cf2d850363926fa136f795b4e9434a5c6.js?body=1" for 127.0.0.1 at 2020-04-23 19:00:41 -0400
+
+
+Started GET "/documents/75" for 127.0.0.1 at 2020-04-23 19:00:43 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 75]]
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  Rendered documents/show.html.haml within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/documents/77" for 127.0.0.1 at 2020-04-23 19:00:49 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"77"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 77]]
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 2]]
+  Rendered documents/show.html.haml within layouts/application (0.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/documents/72" for 127.0.0.1 at 2020-04-23 19:01:14 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 72]]
+  [1m[35mDocument Load (0.2ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 2]]
+  Rendered documents/show.html.haml within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.7ms)

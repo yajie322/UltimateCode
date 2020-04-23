@@ -24,7 +24,7 @@ class DocumentsController < ApplicationController
     @font_size = [['Font Size', 12], ['12', 12], ['14', 14], ['16', 16], ['18', 18], ['20', 20], ['40', 40], ['80', 80]]
     @document ||= Document.find(params[:id])
     @document_list = []
-    document = Document.where(user_id: @document.user_id)
+    document = Document.where(user_id: @document.user_id).order(:name)
     @doc_name = @document.name
     document.each do |doc|
         @document_list.append([doc.name, doc.name])
