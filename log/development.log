@@ -8308,3 +8308,1986 @@ Processing by DocumentsController#show as HTML
   Rendered documents/show.html.haml within layouts/application (0.6ms)
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
 Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 20:51:24 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (43.6ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" IS NULL  ORDER BY "documents"."name" ASC
+  Rendered ultimatecode/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 720ms (Views: 637.8ms | ActiveRecord: 44.5ms)
+
+
+Started GET "/assets/collaborations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/button.self-21b25acb839d2f6d967feca256aeffad457881b37003c2bff9f81de8083fc984.css?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/textareaLikeDiv.self-180fa98e01938614e656599dd90929c3ad2aa17ba6dfb4eeda5407d848deaf42.css?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/collaborations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/editor.self-7de618b2457e587d384e3a19a3bf6762ddfe65b42b66cd0198bfa599b4b3d1f7.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/homeFileSelector.self-248ba9ebe01e984bad3c553f09c852136d0999223b6e9994b12babab0eb6be12.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/invitePopup.self-275a26c3982829545ebf671222b2f1938a8ffa0abe1b862fcf928e6456de317b.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/updateDocument.self-1adf86c45ad04356b2f86177f99cd2bd1c07fc86fabdb2099d9b6b5977ca4599.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2020-04-23 20:51:25 -0400
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-23 20:51:28 -0400
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-23 20:51:28 -0400
+
+
+Started GET "/auth/google_oauth2/callback?state=b2356831fdbbb8973be5a47e35e63606d456ba3238b90052&code=4/zAGRJ8VTzyj4eSLDCMJcFw0FTQRBN6mU5A8-5GUQ-ILcrTdTsHmEEH38zIDm47DvpO6LC8RR0a5qdL71UmIY4s8&scope=email%20profile%20openid%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-23 20:51:31 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"b2356831fdbbb8973be5a47e35e63606d456ba3238b90052", "code"=>"4/zAGRJ8VTzyj4eSLDCMJcFw0FTQRBN6mU5A8-5GUQ-ILcrTdTsHmEEH38zIDm47DvpO6LC8RR0a5qdL71UmIY4s8", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"1", "hd"=>"columbia.edu", "prompt"=>"none", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (40.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1[0m  [["provider", "google_oauth2"], ["uid", "102942977602951052568"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mDocument Load (0.8ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 71ms (ActiveRecord: 45.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 20:51:32 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.9ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 37ms (Views: 30.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/documents/101" for ::1 at 2020-04-23 20:51:37 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 101]]
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (9.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 44ms (Views: 38.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=1&commit=New+Document" for ::1 at 2020-04-23 20:52:19 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"1", "commit"=>"New Document"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "1_untitled_254"], ["user_id", 1], ["created_at", "2020-04-24 00:52:19.070712"], ["updated_at", "2020-04-24 00:52:19.070712"]]
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/documents/255
+Completed 302 Found in 49ms (ActiveRecord: 41.7ms)
+
+
+Started GET "/documents/255" for ::1 at 2020-04-23 20:52:19 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"255"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 255]]
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (3.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 22.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/documents/change_doc?file_name=1_untitled_79" for ::1 at 2020-04-23 20:52:42 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"1_untitled_79"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "1_untitled_79"]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/change_doc?file_name=1_untitled_86" for ::1 at 2020-04-23 20:52:44 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"1_untitled_86"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1  [["name", "1_untitled_86"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/documents/change_doc?file_name=1_untitled_88" for ::1 at 2020-04-23 20:52:57 -0400
+Processing by DocumentsController#change_doc as TEXT
+  Parameters: {"file_name"=>"1_untitled_88"}
+  [1m[36mDocument Load (0.2ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."name" = $1 LIMIT 1[0m  [["name", "1_untitled_88"]]
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 20:55:10 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (1.0ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 49ms (Views: 42.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 20:57:24 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.7ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (16.9ms)
+Completed 200 OK in 77ms (Views: 70.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/button.self-99d2daae7c181c6f18834151083c46581b12bf05e14762ed905d59e570e09ad7.css?body=1" for ::1 at 2020-04-23 20:57:25 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 20:57:51 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.6ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 60ms (Views: 52.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 20:58:40 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.7ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 57ms (Views: 50.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/button.self-7c6d6ffebba5a41dce2337682a06b8da307864540857b8079b10ad9d2353d61b.css?body=1" for ::1 at 2020-04-23 20:58:40 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 20:59:28 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.6ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 46ms (Views: 32.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:00:53 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.6ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 48ms (Views: 41.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-e0234ca3fcbe8dea47eaf68d25ce54857f5eae9bf44bf2a95841d3016fc37a2e.css?body=1" for ::1 at 2020-04-23 21:00:53 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:01:06 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 54ms (Views: 47.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-9fa4e233cf99347c693c69722e2fc67ca989b4e5af03797a73db90bceea4fcff.css?body=1" for ::1 at 2020-04-23 21:01:06 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:01:42 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-eb9431853c895f76b401edd9dc19b2abaadd19648d9e588b1b51e4c42be5be8e.css?body=1" for ::1 at 2020-04-23 21:01:42 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:02:04 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.6ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 55ms (Views: 46.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-9a65c836471c218789df88b9a4ac28b5fec3394b64cc1cb24e161bd7a75a7111.css?body=1" for ::1 at 2020-04-23 21:02:04 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:02:06 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 20.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:02:49 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.6ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 40ms (Views: 31.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:03:14 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 52ms (Views: 47.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-17eabd56027b3b283b17f372ffc4440d4ba519eeb42561fd011747dc07537805.css?body=1" for ::1 at 2020-04-23 21:03:14 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:03:25 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 45ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-afacd54b7b6ce32198a896224ee056d0361fece3ffdc96a70c53fb1878c9ac8f.css?body=1" for ::1 at 2020-04-23 21:03:25 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:03:56 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 42ms (Views: 37.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-4f3b8fbf36a47f4d085fb851cf97e093a283a30568ad6024309f746e2ffda128.css?body=1" for ::1 at 2020-04-23 21:03:56 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:04:20 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.9ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 45ms (Views: 37.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/button.self-7a3a88288e3da6298bac27a5c8ff0eecaf6f2398d12cc0dea5968639c92252de.css?body=1" for ::1 at 2020-04-23 21:04:20 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:04:29 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 42ms (Views: 37.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-d8c6c1a24cebe2383d792b4b6da32761c737c639f45a8653a6088f1ca009ed35.css?body=1" for ::1 at 2020-04-23 21:04:29 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:04:41 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.6ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 57ms (Views: 44.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/button.self-6bbbefdebedd321aefa1094df158c66c55ade51f1564dfda40ec7ec5627ddf04.css?body=1" for ::1 at 2020-04-23 21:04:41 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:04:42 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:04:43 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 36ms (Views: 30.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:05:02 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (4.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 62ms (Views: 46.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/button.self-a1ab707508de7a542612f449d2a6d476f344b1524152778ccceb99b81285a9fa.css?body=1" for ::1 at 2020-04-23 21:05:02 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:05:32 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 53ms (Views: 45.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-a3348a684965b04f0243b34de21137a4237046ceb9e3ed9e3c3e8747f8640f1f.css?body=1" for ::1 at 2020-04-23 21:05:32 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:05:54 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.7ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (19.8ms)
+Completed 200 OK in 63ms (Views: 56.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-91b5602d367c3b492edc49c7736d47fac3626ca9926b8b2c51162045cbe570df.css?body=1" for ::1 at 2020-04-23 21:05:54 -0400
+
+
+Started GET "/documents/11" for ::1 at 2020-04-23 21:06:01 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (2.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 30ms (Views: 22.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:06:16 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 49ms (Views: 42.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/button.self-2aa0f8397b33aae36b3dbba8175ae8da16458a0821111502db6df6b289128b49.css?body=1" for ::1 at 2020-04-23 21:06:16 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:06:25 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 51ms (Views: 44.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/button.self-29bfc8c7848f9d06e89139d3f2b08068f39fd6d074aed6513fa013ef78ebf9fe.css?body=1" for ::1 at 2020-04-23 21:06:25 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:06:32 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 58ms (Views: 50.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/button.self-f56ee48da7e2f515072b3223bf694c525dc08e8bc60df4824d969e70cc2ffd26.css?body=1" for ::1 at 2020-04-23 21:06:32 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:06:39 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 52ms (Views: 47.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-f6b922e46eb494f94a8da63efa9c6b70da0a41c16970887fe9a2088aad175d96.css?body=1" for ::1 at 2020-04-23 21:06:39 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:06:45 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 43ms (Views: 36.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-7c1eee4e5a36ff0ea7425f4f98c202b2fc906cbeb67c1df3ea40fe8afdb19736.css?body=1" for ::1 at 2020-04-23 21:06:45 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:06:57 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 52ms (Views: 46.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-83b2e34d190e669e5f070cbf49435315e220e794079145a069e02714e7e2bf0c.css?body=1" for ::1 at 2020-04-23 21:06:57 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:07:47 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (1.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 79ms (Views: 68.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/button.self-b8401228408fa009c9695fe33839d85e55a5bc6de6f600a3bc19d3f7781adc0d.css?body=1" for ::1 at 2020-04-23 21:07:47 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:08:12 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 53ms (Views: 45.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/button.self-ea14a5121b306b7eb77e352a0d9b4cccea99a8212357bdedb5fe454fbe2097df.css?body=1" for ::1 at 2020-04-23 21:08:12 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:08:38 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 53ms (Views: 45.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-efc430ed3e96767e8800d937a97033fdb1bc8b52b7003961ac7ac7995ab2958d.css?body=1" for ::1 at 2020-04-23 21:08:38 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:08:49 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 75ms (Views: 67.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-c0da005156cc7cf94df08acc5e8ebbea9bf151e399a9af140f1b02685b769725.css?body=1" for ::1 at 2020-04-23 21:08:49 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:09:06 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 53ms (Views: 48.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-6a252bc9b62a3af5ac594e2feaca6e77c39129725419cf88f88764bf229840da.css?body=1" for ::1 at 2020-04-23 21:09:06 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:09:15 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.9ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 52ms (Views: 45.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/button.self-4bb813e20525e9606b11277220bc65c78493a12adbc297de98f69e9ce41a3f2d.css?body=1" for ::1 at 2020-04-23 21:09:15 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:09:38 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 64ms (Views: 57.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-a387233fa482cc479c5df8323da12b7a72f213f0e973a72bf758b038f6dc0e70.css?body=1" for ::1 at 2020-04-23 21:09:38 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:09:56 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 46ms (Views: 39.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/button.self-18ce0c85c76f4c8069eb3bc15b3179be4c3936ce8bb5a8046ceca79c623b1adf.css?body=1" for ::1 at 2020-04-23 21:09:56 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:10:01 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 55ms (Views: 49.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-53497a0749e5f5b1add0adb63f4417b129ea7662fdd899c7dab23a374ecb92b5.css?body=1" for ::1 at 2020-04-23 21:10:02 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:10:08 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-4e1fa169580aebc49aab20f6354b68240a65ed0c08d25ebfb53043e7be4daef5.css?body=1" for ::1 at 2020-04-23 21:10:08 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:10:15 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (1.0ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 49ms (Views: 41.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/button.self-defa5b72121f743a41a1e1a2ca7b1d3db82dc5e05b6be5fb8007dcebc7894c12.css?body=1" for ::1 at 2020-04-23 21:10:15 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:10:45 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 60ms (Views: 54.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-0d024d612a7cde1d8eddbeaaaf9c61b576ad6a55034465458a386d447b870183.css?body=1" for ::1 at 2020-04-23 21:10:45 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:10:57 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 50ms (Views: 43.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-ebcb9a91a36ba448d5735c3f642692780113662b510662b5245c8ab0f262448f.css?body=1" for ::1 at 2020-04-23 21:10:57 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:11:09 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 45ms (Views: 38.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-657ef409ea7bcffa2b9eae88413da70e739aaef8a51aa4ae8d18c129b98e0a8e.css?body=1" for ::1 at 2020-04-23 21:11:09 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:11:40 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-04f61b8a29e6e78ef847288bfe277a3e0070667c13e341390c364e979e1d9ffe.css?body=1" for ::1 at 2020-04-23 21:11:40 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:11:47 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 27.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:12:07 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 57ms (Views: 50.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-399f3bd1c9ca64f76fa384034cfd381fd5eb5b023f389ddd90e213054541eead.css?body=1" for ::1 at 2020-04-23 21:12:07 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:12:19 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 49ms (Views: 43.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/button.self-ffe0406edc8c42507305815e74ddc82c9e0ba5b42cc6cfc8e281f673fcfb45ac.css?body=1" for ::1 at 2020-04-23 21:12:19 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:13:02 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 52ms (Views: 46.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-8f7d9ca53108355fdc16316eafe3e6d6c3f05542322613ee5c014489ea567d74.css?body=1" for ::1 at 2020-04-23 21:13:02 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:13:19 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 51ms (Views: 44.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-688cb8c599eeef4686930129abd87e19dad4fdde05d016a6c2c14cb4bf788860.css?body=1" for ::1 at 2020-04-23 21:13:20 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:14:56 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-0fcf164ca3ca477fc9cdd4a7a563a8c6bc7dafab76a02cc8fff628b7023357a6.css?body=1" for ::1 at 2020-04-23 21:14:56 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:14:57 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 23.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:14:58 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 35ms (Views: 27.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:14:59 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:15:42 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 52ms (Views: 36.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:15:48 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 52ms (Views: 37.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:16:47 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 51ms (Views: 35.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:16:55 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 49ms (Views: 32.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:17:13 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (13.9ms)
+Completed 200 OK in 54ms (Views: 39.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:17:26 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 45ms (Views: 31.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:17:53 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 47ms (Views: 33.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:18:04 -0400
+
+SyntaxError (/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/controllers/ultimatecode_controller.rb:4: syntax error, unexpected &, expecting ']'
+    @document_list = [[ &nbsp;'    Select File', '']]
+                         ^
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/controllers/ultimatecode_controller.rb:4: syntax error, unexpected ',', expecting keyword_end
+ = [[ &nbsp;'    Select File', '']]
+                              ^):
+  app/controllers/ultimatecode_controller.rb:4: syntax error, unexpected &, expecting ']'
+  app/controllers/ultimatecode_controller.rb:4: syntax error, unexpected ',', expecting keyword_end
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.2ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (174.9ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=b2356831fdbbb8973be5a47e35e63606d456ba3238b90052&code=4/zAGsRm8rGouSpmnZ3_mMd-lsZwhn7Z3Fu3W9keJDN66aAgJWU56bOv0uczwSiZwwPChAik4X9H9Tpkt0PiDs_vQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-23 21:18:15 -0400
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:491:in `fail!'
+  omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:71:in `callback_phase'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:238:in `callback_call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:189:in `call!'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+  omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.9ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.0ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=b2356831fdbbb8973be5a47e35e63606d456ba3238b90052&code=4/zAGsRm8rGouSpmnZ3_mMd-lsZwhn7Z3Fu3W9keJDN66aAgJWU56bOv0uczwSiZwwPChAik4X9H9Tpkt0PiDs_vQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-23 21:18:25 -0400
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:491:in `fail!'
+  omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:71:in `callback_phase'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:238:in `callback_call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:189:in `call!'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+  omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.1ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.4ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=b2356831fdbbb8973be5a47e35e63606d456ba3238b90052&code=4/zAGsRm8rGouSpmnZ3_mMd-lsZwhn7Z3Fu3W9keJDN66aAgJWU56bOv0uczwSiZwwPChAik4X9H9Tpkt0PiDs_vQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-23 21:18:26 -0400
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:491:in `fail!'
+  omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:71:in `callback_phase'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:238:in `callback_call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:189:in `call!'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+  omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (137.4ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=b2356831fdbbb8973be5a47e35e63606d456ba3238b90052&code=4/zAGsRm8rGouSpmnZ3_mMd-lsZwhn7Z3Fu3W9keJDN66aAgJWU56bOv0uczwSiZwwPChAik4X9H9Tpkt0PiDs_vQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-23 21:18:27 -0400
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:491:in `fail!'
+  omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:71:in `callback_phase'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:238:in `callback_call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:189:in `call!'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+  omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.2ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:18:40 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 39ms (Views: 26.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:18:57 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 53ms (Views: 38.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:19:49 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 47ms (Views: 31.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:20:12 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 53ms (Views: 38.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:22:53 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 61ms (Views: 44.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:23:07 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 47ms (Views: 31.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:23:32 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 48ms (Views: 36.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:24:57 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 80ms (Views: 73.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-08a73b24b14577567ed8603f1b94e30ff4135be66b1284ddbc947f30f2b3a80e.css?body=1" for ::1 at 2020-04-23 21:24:57 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:26:11 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-610110f86ad81d49ba9562ec5e0d53c8f79e3c44f252cbe61b1cc5058145991c.css?body=1" for ::1 at 2020-04-23 21:26:12 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:26:22 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 46ms (Views: 39.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/button.self-610110f86ad81d49ba9562ec5e0d53c8f79e3c44f252cbe61b1cc5058145991c.css?body=1" for ::1 at 2020-04-23 21:26:22 -0400
+
+
+Started GET "/assets/homeFileSelector.self-248ba9ebe01e984bad3c553f09c852136d0999223b6e9994b12babab0eb6be12.js?body=1" for ::1 at 2020-04-23 21:26:22 -0400
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=1&commit=New+Document" for ::1 at 2020-04-23 21:28:57 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"1", "commit"=>"New Document"}
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (3.9ms)[0m  [1mINSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "1_untitled_255"], ["user_id", 1], ["created_at", "2020-04-24 01:28:58.042771"], ["updated_at", "2020-04-24 01:28:58.042771"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/documents/256
+Completed 302 Found in 22ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/documents/256" for ::1 at 2020-04-23 21:28:58 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"256"}
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 256]]
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (8.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 67ms (Views: 56.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:29:53 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 91ms (Views: 80.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/button.self-37e51ba57ca95581cb845eaba932150718b11138f8615e0f5cde852df9db22c2.css?body=1" for ::1 at 2020-04-23 21:29:53 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:31:32 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.8ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 71ms (Views: 59.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/button.self-670d7cd1ddf8a153402b415bbf22c73f4ac710e724a6b7aee99f6cef0e82c49b.css?body=1" for ::1 at 2020-04-23 21:31:32 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:33:48 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.9ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 70ms (Views: 60.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/button.self-335ce9b1a4419075cc8418b1cccd9f17ebb36fd1243caf0d5cd261ed8b307b56.css?body=1" for ::1 at 2020-04-23 21:33:48 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:36:43 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (5.0ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 81ms (Views: 69.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/button.self-272569e63194b80da77431a50eec3e3ad9e2f3c6a883713b898ebd0622399a23.css?body=1" for ::1 at 2020-04-23 21:36:43 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:37:22 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (1.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 65ms (Views: 52.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/button.self-176169db85b106e53b013dc842a9246cac734678b1436215e55890de3ee87993.css?body=1" for ::1 at 2020-04-23 21:37:22 -0400
+
+
+Started GET "/documents/2" for ::1 at 2020-04-23 21:37:38 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mDocument Load (0.2ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (2.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 44ms (Views: 37.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:39:03 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.5ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 73ms (Views: 65.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-909d8e5335dcc3df06f17a9e89b29c45606d707a127177ee411419c3be7f2310.css?body=1" for ::1 at 2020-04-23 21:39:03 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:40:52 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.7ms)
+
+SyntaxError (/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:4: syntax error, unexpected '\n', expecting =>
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:9: syntax error, unexpected keyword_else, expecting ')'
+ else
+     ^
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:15: syntax error, unexpected keyword_end, expecting ')'
+; end;; _hamlout.buffer << ("</div>
+     ^
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:15: syntax error, unexpected keyword_ensure, expecting ')'
+Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.u
+                              ^
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:15: syntax error, unexpected keyword_end, expecting ')'
+ffer.upper if @haml_buffer;end;
+                              ^
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:18: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  app/views/ultimatecode/index.html.haml:4: syntax error, unexpected '\n', expecting =>
+  app/views/ultimatecode/index.html.haml:9: syntax error, unexpected keyword_else, expecting ')'
+  app/views/ultimatecode/index.html.haml:15: syntax error, unexpected keyword_end, expecting ')'
+  app/views/ultimatecode/index.html.haml:15: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/ultimatecode/index.html.haml:15: syntax error, unexpected keyword_end, expecting ')'
+  app/views/ultimatecode/index.html.haml:18: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.1ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.6ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:41:05 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (15.6ms)
+Completed 200 OK in 54ms (Views: 48.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:41:11 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 34ms (Views: 27.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:41:28 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:41:38 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:4: syntax error, unexpected ':', expecting ')'
+((( select_tag :h_f_selector :id => "home_file_selector", :c
+                              ^
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:4: syntax error, unexpected ',', expecting ')'
+r :id => "home_file_selector", :class => "btn"
+                              ^):
+  app/views/ultimatecode/index.html.haml:4: syntax error, unexpected ':', expecting ')'
+  app/views/ultimatecode/index.html.haml:4: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.1ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.5ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=b2356831fdbbb8973be5a47e35e63606d456ba3238b90052&code=4/zAGsRm8rGouSpmnZ3_mMd-lsZwhn7Z3Fu3W9keJDN66aAgJWU56bOv0uczwSiZwwPChAik4X9H9Tpkt0PiDs_vQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-23 21:42:01 -0400
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:491:in `fail!'
+  omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:71:in `callback_phase'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:238:in `callback_call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:189:in `call!'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+  omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.3ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=b2356831fdbbb8973be5a47e35e63606d456ba3238b90052&code=4/zAGsRm8rGouSpmnZ3_mMd-lsZwhn7Z3Fu3W9keJDN66aAgJWU56bOv0uczwSiZwwPChAik4X9H9Tpkt0PiDs_vQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-23 21:42:03 -0400
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:491:in `fail!'
+  omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:71:in `callback_phase'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:238:in `callback_call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:189:in `call!'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+  omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.6ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.6ms)
+
+
+Started GET "/auth/google_oauth2/callback?state=b2356831fdbbb8973be5a47e35e63606d456ba3238b90052&code=4/zAGsRm8rGouSpmnZ3_mMd-lsZwhn7Z3Fu3W9keJDN66aAgJWU56bOv0uczwSiZwwPChAik4X9H9Tpkt0PiDs_vQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20openid&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-23 21:42:04 -0400
+
+OmniAuth::Strategies::OAuth2::CallbackError (csrf_detected | CSRF detected):
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:25:in `raise_out!'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:20:in `call'
+  omniauth (1.9.1) lib/omniauth/failure_endpoint.rb:12:in `call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:491:in `fail!'
+  omniauth-oauth2 (1.6.0) lib/omniauth/strategies/oauth2.rb:71:in `callback_phase'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:238:in `callback_call'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:189:in `call!'
+  omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+  omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+  rack (1.6.13) lib/rack/etag.rb:24:in `call'
+  rack (1.6.13) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.13) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:252:in `context'
+  rack (1.6.13) lib/rack/session/abstract/id.rb:247:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.10) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.1ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:42:12 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms)
+
+SyntaxError (/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  app/views/ultimatecode/index.html.haml:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.9ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.9ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:42:26 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.8ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 36ms (Views: 24.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:42:39 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.7ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 36ms (Views: 30.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:43:49 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.5ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/documents/new?utf8=%E2%9C%93&user_id=1&commit=New+Document" for ::1 at 2020-04-23 21:44:15 -0400
+Processing by DocumentsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user_id"=>"1", "commit"=>"New Document"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "documents" WHERE "documents"."user_id" = $1  [["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "documents" ("name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["name", "1_untitled_256"], ["user_id", 1], ["created_at", "2020-04-24 01:44:15.087783"], ["updated_at", "2020-04-24 01:44:15.087783"]]
+  [1m[36m (5.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/documents/257
+Completed 302 Found in 11ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/documents/257" for ::1 at 2020-04-23 21:44:15 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"257"}
+  [1m[35mDocument Load (0.3ms)[0m  SELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1  [["id", 257]]
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (4.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 37ms (Views: 32.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:46:40 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 32ms (Views: 25.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:46:51 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.9ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 38ms (Views: 30.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:49:19 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (4.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (8.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 91ms (Views: 71.8ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/button.self-c06254bc23ec041b33998a6b953414a6c17078278a89271fd790f3a33570db42.css?body=1" for ::1 at 2020-04-23 21:49:20 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:50:44 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 78ms (Views: 69.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/button.self-8e87bbc80dd8177d7876091eab773d5a34ca3b818132998ebb719bb77b9ce1f0.css?body=1" for ::1 at 2020-04-23 21:50:44 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:53:29 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 82ms (Views: 76.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/button.self-88116c008ef9bce36c20c3209cda835a6328c0959cfb264a66500bd75a3b6564.css?body=1" for ::1 at 2020-04-23 21:53:29 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 21:53:53 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 65ms (Views: 57.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/documents/101" for ::1 at 2020-04-23 21:53:56 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mDocument Load (0.1ms)[0m  [1mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = $1 LIMIT 1[0m  [["id", 101]]
+  [1m[35mDocument Load (0.3ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  Rendered documents/show.html.haml within layouts/application (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:54:25 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.9ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.9ms)
+
+SyntaxError (/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:4: syntax error, unexpected ')', expecting =>
+lass => "buf", @document_list), :id => "home_file_selector",
+                              ^
+/Users/rebecca/Desktop/work/columbia/ASE/UltimateCode/app/views/ultimatecode/index.html.haml:4: syntax error, unexpected ',', expecting ')'
+, :id => "home_file_selector", :class => "btn"
+                              ^):
+  app/views/ultimatecode/index.html.haml:4: syntax error, unexpected ')', expecting =>
+  app/views/ultimatecode/index.html.haml:4: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.0ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.2ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:56:01 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.9ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (18.9ms)
+Completed 200 OK in 88ms (Views: 70.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:56:29 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (4.0ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 68ms (Views: 47.0ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:58:17 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.8ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (24.2ms)
+Completed 200 OK in 62ms (Views: 45.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:58:33 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (30.1ms)
+Completed 200 OK in 90ms (Views: 71.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:58:58 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.4ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 69ms (Views: 45.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 21:59:26 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (1.2ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 63ms (Views: 56.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/button.self-9fc083d3b88ae2b582ef6c47af94994328fe9e71e04cb604686b5454cc41bef7.css?body=1" for ::1 at 2020-04-23 21:59:26 -0400
+
+
+Started GET "/" for ::1 at 2020-04-23 22:00:37 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (1.0ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 120ms (Views: 82.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 22:00:59 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.6ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (37.0ms)
+Completed 200 OK in 78ms (Views: 58.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 22:01:54 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (0.7ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (21.1ms)
+Completed 200 OK in 69ms (Views: 47.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 22:12:58 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[36mDocument Load (1.1ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (19.3ms)
+Completed 200 OK in 128ms (Views: 88.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 22:16:43 -0400
+
+ActiveRecord::NoDatabaseError (FATAL:  database "ultimatecode_development" does not exist
+):
+  activerecord (4.2.10) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.10) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.10) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.10) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.10) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.10) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.10) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.10) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.10) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.10) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.10) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.13) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.13) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.13) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.13) lib/rack/lock.rb:17:in `call'
+  rack (1.6.13) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.13) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.5ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebecca/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.8ms)
+  [1m[36m (64.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (44.7ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20200401192013)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (52.3ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying, "first_name" character varying, "last_name" character varying, "uid" character varying, "provider" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20200401192013"]]
+  [1m[36m (41.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDocuments (20200401195315)
+  [1m[35m (39.9ms)[0m  BEGIN
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "documents" ("id" serial primary key, "name" character varying, "user_id" integer, "content" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE  INDEX  "index_documents_on_user_id" ON "documents"  ("user_id")
+  [1m[36m (5.2ms)[0m  [1mALTER TABLE "documents" ADD CONSTRAINT "fk_rails_2be0318c46"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20200401195315"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCollaborations (20200401195506)
+  [1m[35m (40.5ms)[0m  BEGIN
+  [1m[36m (5.8ms)[0m  [1mCREATE TABLE "collaborations" ("id" serial primary key, "user_id" integer, "document_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX  "index_collaborations_on_user_id" ON "collaborations"  ("user_id")
+  [1m[36m (1.0ms)[0m  [1mCREATE  INDEX  "index_collaborations_on_document_id" ON "collaborations"  ("document_id")[0m
+  [1m[35m (0.9ms)[0m  ALTER TABLE "collaborations" ADD CONSTRAINT "fk_rails_3e8ae0af8a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "collaborations" ADD CONSTRAINT "fk_rails_2247055f1f"
+FOREIGN KEY ("document_id")
+  REFERENCES "documents" ("id")
+[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20200401195506"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (47.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'collaborations'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'documents'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2020-04-23 22:18:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.4ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (18.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 661ms (Views: 628.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-23 22:18:49 -0400
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2020-04-23 22:18:49 -0400
+
+
+Started GET "/auth/google_oauth2/callback?state=a58a0110e06d5f9b7bf2d372c3dcc1050332910d75aa9cc2&code=4/zAGvFKfxc1PEHTn7Xq56ROFcH3rDYvj2-Qw9Q-l19yAYm4o7emLmuxuCjOazKIyqI3PD-BTdDRpeQ3GflrDC8vs&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20openid%20https://www.googleapis.com/auth/userinfo.email&authuser=1&hd=columbia.edu&prompt=none" for ::1 at 2020-04-23 22:18:52 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"a58a0110e06d5f9b7bf2d372c3dcc1050332910d75aa9cc2", "code"=>"4/zAGvFKfxc1PEHTn7Xq56ROFcH3rDYvj2-Qw9Q-l19yAYm4o7emLmuxuCjOazKIyqI3PD-BTdDRpeQ3GflrDC8vs", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email", "authuser"=>"1", "hd"=>"columbia.edu", "prompt"=>"none", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2  ORDER BY "users"."id" ASC LIMIT 1[0m  [["provider", "google_oauth2"], ["uid", "102942977602951052568"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (40.9ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["provider", "google_oauth2"], ["uid", "102942977602951052568"], ["first_name", "Tsung-Hsiang"], ["last_name", "Wang"], ["email", "tw2723@columbia.edu"], ["created_at", "2020-04-24 02:18:52.742063"], ["updated_at", "2020-04-24 02:18:52.742063"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36mDocument Load (0.3ms)[0m  [1mSELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC[0m  [["user_id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 59ms (ActiveRecord: 47.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-23 22:18:52 -0400
+Processing by UltimatecodeController#index as HTML
+  [1m[35mDocument Load (0.2ms)[0m  SELECT "documents".* FROM "documents" WHERE "documents"."user_id" = $1  ORDER BY "documents"."name" ASC  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ultimatecode/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.7ms)
