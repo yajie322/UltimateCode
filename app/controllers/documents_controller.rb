@@ -18,22 +18,6 @@ class DocumentsController < ApplicationController
       # Get the last document
       @current_document = Document.limit(1).order("id desc")
     end
-
-    @current_document_name = @current_document.name
-    @document_list = Hash.new
-    owned_documents = Document.where(user_id: session[:user_id])
-    owned_documents.each do |doc|
-        @document_list[doc.name] = doc.id
-    end
-
-    collaborated_documents = Collaboration.where(user_id: session[:user_id])
-    collaborated_documents.each do |c|
-      puts c.user_id
-      doc = Document.find(c.document_id)
-      if doc
-        @document_list[doc.name] = doc.id
-      end
-    end
   end
 
   def new
@@ -60,6 +44,10 @@ class DocumentsController < ApplicationController
         end
         msg = { :content => content }
         format.json { render json: msg }
+        format.html do
+          session[:current_document_id] = document.id
+          redirect_to documents_path
+        end
       end
     end
   end
