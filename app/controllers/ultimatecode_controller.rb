@@ -3,3 +3,4 @@ class UltimatecodeController < ApplicationController
   	#default: render index
   end
 end
+
