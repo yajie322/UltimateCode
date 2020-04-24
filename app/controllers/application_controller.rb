@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
     @document_list = Hash.new
     if logged_in?
       user_id = session[:user_id]
-
+      @document_list['Select files'] = ''
       owned_documents = Document.where(user_id: user_id).order(:id)
       owned_documents.each do |doc|
         @document_list[doc.name] = doc.id
