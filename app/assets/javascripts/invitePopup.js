@@ -5,12 +5,16 @@ var InvitePopup = {
 		$(document).on(`click`, `#collaboratorAddBtn`, InvitePopup.addCollaborator);
 	},
 	addCollaborator: function() {
-		postfix = '/add_collaborator/' + $('#collaborator_email').val();
+		currentDocumentId = $("#current-document-selector option:selected").val();
+		collaboratorEmail = $('#collaborator_email').val();
+		postfix = '/' + currentDocumentId + '/add_collaborator';
 		$.ajax({
 			type: 'GET',
 			url: $(location).attr('href') + postfix,
 			timeout: 5000,
-			success: function() {
+			data: { 'email': collaboratorEmail },
+			dataType: 'text',
+			success: function(data) {
 				InvitePopup.hideInvitePopup();
 				alert(`Success!`);
 			},

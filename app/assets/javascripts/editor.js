@@ -24,7 +24,6 @@ window.onload = function () {
                   var sel_lang = document.getElementById('selector3').value
                   var sel_theme = document.getElementById('selector2').value
                   var font_num = document.getElementById('selector4').value
-                  console.log("dd");
 
                   console.log(parseInt(font_num));
                   font_num = parseInt(font_num)

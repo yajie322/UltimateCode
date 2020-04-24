@@ -1,41 +1,25 @@
 $(document).ready(function(){
-    //for editor
-    var editor = ace.edit("editor");
     // set document textbox default value
-    $('#docment_name_input').val($('#doc_name').val())
-    //detect textarea change
-    editor.session.on('change', function(){
-        $.ajax({
-            url: $(location).attr('href'),
-            type: "PUT",
-            data: {"content" : editor.session.getValue()},
-            dataType: "text",
-            success: function(data, requestStatus, xhrObject) {
-                //alert('successfully');
-                //alert(data);
-            },
-            error: function(xhr, ajaxOptions, thrownError) {
-                alert(xhr.status);
-                alert(thrownError);
-            }
-        });
-      });
+    var currentDocumentName = $('#current-document-selector option:selected').text();
+    var currentDocumentId = $('#current-document-selector option:selected').val();
+    $('#document_name_input').val(currentDocumentName)
+
+    ace.edit('editor').session.on('change', updateDocumentContent)
+
     //detect select file change
-    $('#selector5').on('change', function() {
-        var selected = this.value;
+    $('#current-document-selector').on('change', function() {
+        var selected = $('#current-document-selector option:selected').text()
         $.ajax({
             url: '/documents/change_doc',
             type: "GET",
             data: {'file_name' : selected},
             dataType: "text",
             success: function(data) {
-                //alert('successfully');
                 result = $.parseJSON(data);
                 if (result.status.toString() == 'ok') {
-                    $('#doc_name').val(selected)
-                    $('#docment_name_input').val(selected)
+                    $('#document_name_input').val(selected)
                     ace.edit("editor").setValue(result.content.toString(), 1)
-                    //alert(result.content.toString())
+                    console.log(result.content.toString())
                 } else {
                     alert(result.message.toString())
                 }
@@ -48,24 +32,42 @@ $(document).ready(function(){
     });
 });
 
-function updateDocName() {
-  var new_name = $('#docment_name_input').val()
-  var old_name = $('#doc_name').val()
-  //alert(old_name)
+function updateDocumentContent() {
+    currentDocumentId = $('#current-document-selector option:selected').val();
+    $.ajax({
+        url: $(location).attr('href') + '/' + currentDocumentId,
+        type: "PUT",
+        data: {"content" : ace.edit('editor').session.getValue()},
+        dataType: "text",
+        success: function(data, requestStatus, xhrObject) {
+            //alert('successfully');
+            //alert(data);
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert(xhr.status);
+            alert(thrownError);
+        }
+    });
+}
+
+function updateDocumentName() {
+  var new_name = $('#document_name_input').val()
+  // var old_name = $('#current_document_name').val()
+  var old_name = $('#current-document-selector option:selected').text();
+
   $.ajax({
         url: $(location).attr('href') + '/edit_doc_name',
         type: "PUT",
-        data: {'new_doc_name' : new_name, 'old_doc_name' : old_name},
+        data: {'new_doc_name' : new_name},
         dataType: "text",
         success: function(data) {
-            //alert('successfully');
             result = $.parseJSON(data);
-            alert(result.message.toString())
             if (result.status.toString() == 'ok') {
-                $('#doc_name').val(new_name)
-                //alert($('#doc_name').val())
+                $('#document_name_input').val(new_name)
+                $('#current-document-selector option:selected').text(new_name);
             } else {
-                $('#docment_name_input').val(old_name)
+                $('#document_name_input').val(old_name)
+                alert(result.message)
             }
         },
         error: function(xhr, ajaxOptions, thrownError) {

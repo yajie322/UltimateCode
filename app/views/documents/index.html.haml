@@ -1,0 +1,36 @@
+%html
+  %head    
+    %div{class:"p2_title"} 
+
+      %span{class:"document_name"}
+        %label{:for => "document_name_input", id: "label"} 
+          %i{class:"fas fa-file-alt", id:"file_icon"}
+        %input#document_name_input{:onblur => "updateDocumentName()", :name => "document_name", :type => "text"} 
+        = select_tag :p_style, options_for_select(@document_list, :selected => @current_document.id), :id => "current-document-selector"
+      
+      = select_tag :p_font, options_for_select(@font_size), :id => "selector4"
+      = select_tag :pl, options_for_select(@programming_languages), :id => "selector3"
+      = select_tag :p_style, options_for_select(@theme), :id => "selector2"
+      %label{class:"switch"}
+        %input{type:"checkbox", id:"switch"}
+        %span{class:"slider"} 
+          %span{class:"word"} Off &nbsp;On
+
+      %span{:id => "invite"}
+        %i{class: "fas fa-plus"} 
+        %span Invite
+
+    %div{class:"modal", id: "inviteModal"} 
+      %div{class:"modal-content"}
+        %span{id: "closeModalBtn"}
+          &times;
+        %p{id:"modal-title"} Invite Collaborators
+        %input{id: "collaborator_email", type: "text", class: "text-line"} 
+        %p{id:"modal_footer"} Invited:
+        %button{class:"button_add button1", id: "collaboratorAddBtn"} Add 
+        
+    %br       
+    %b
+    %div{id:"editor"}
+    %br
+    %br

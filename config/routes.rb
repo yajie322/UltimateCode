@@ -14,8 +14,8 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: 'logout'
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
-  put 'documents/:id/edit_doc_name(.:format)' => 'documents#edit_doc_name'
-  get 'documents/:id/add_collaborator/:email(.:format)' => 'documents#add_collaborator'
+  put 'documents/edit_doc_name' => 'documents#edit_doc_name'
+  get 'documents/:id/add_collaborator' => 'documents#add_collaborator'
   get 'documents/change_doc', to: 'documents#change_doc'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :documents

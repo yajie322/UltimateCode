@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
-	has_many :document
-	has_many :collaboration
+	has_many :documents
+	has_many :collaborations
 
 	def self.find_or_create_with_omniauth(auth)
 		where(:provider => auth.provider, :uid => auth.uid).first_or_initialize.tap do |user|
