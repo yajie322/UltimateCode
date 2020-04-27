@@ -391,6 +391,13 @@ input:checked + .slider:before {
   background-color: black;
   color: white;
 }
+#delete{
+  font-size: 16px;
+  color: black;
+}
+#delete:hover{
+  color: red;
+}
 .document_name{
   margin-left: 50px;
   padding: 14px;
