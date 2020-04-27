@@ -30,6 +30,32 @@ $(document).ready(function(){
             }
         });
     });
+    //delete file
+    $('#delete').on('click', function() {
+        url = $(location).attr('href').replace('/documents', '');
+        var selected = $('#current-document-selector option:selected').text()
+        var check = confirm('Delete ' + selected + '?');
+        if (check){
+		$.ajax({
+		    url: $(location).attr('href') + '/delete_doc',
+		    type: "PUT",
+		    dataType: "text",
+		    success: function(data) {
+		        result = $.parseJSON(data);
+		        if (result.status.toString() == 'ok') {
+		            alert(result.file_name.toString() + ' deleted');
+		            window.location.assign(url);                     
+		        } else {
+		            alert(result.message.toString())
+		        }
+		    },
+		    error: function(xhr, ajaxOptions, thrownError) {
+		        alert(xhr.status);
+		        alert(thrownError);
+		    }
+		});
+	}
+    });
 });
 
 function updateDocumentContent() {

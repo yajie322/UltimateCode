@@ -124,4 +124,25 @@ class DocumentsController < ApplicationController
     end
   end
 
+  def delete_doc
+    current_document_id = session[:current_document_id]
+    doc = Document.find(current_document_id)
+    if doc
+        session[:current_document_id] = -1
+        file_name = doc.name
+        doc.destroy
+        respond_to do |format|
+            if !file_name
+              file_name = ""
+            end
+            msg = { :status => "ok", :file_name => file_name }
+            format.json { render json: msg }
+        end
+    else
+        respond_to do |format|
+            msg = { :status => "err", :message => "file not exist!"}
+            format.json { render json: msg }
+        end
+    end
+  end
 end

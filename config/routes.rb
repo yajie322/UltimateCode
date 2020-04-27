@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   put 'documents/edit_doc_name' => 'documents#edit_doc_name'
   get 'documents/:id/add_collaborator' => 'documents#add_collaborator'
   get 'documents/change_doc', to: 'documents#change_doc'
+  put 'documents/delete_doc', to: 'documents#delete_doc'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   resources :documents
 

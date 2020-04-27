@@ -7,6 +7,8 @@
           %i{class:"fas fa-file-alt", id:"file_icon"}
         %input#document_name_input{:onblur => "updateDocumentName()", :name => "document_name", :type => "text"} 
         = select_tag :p_style, options_for_select(get_document_list, :selected => @current_document.id), :id => "current-document-selector"
+        %span{:id => "delete"}
+          %i{class: "fas fa-trash"}
       
       = select_tag :p_font, options_for_select(@font_size), :id => "selector4"
       = select_tag :pl, options_for_select(@programming_languages), :id => "selector3"
