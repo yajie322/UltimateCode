@@ -1,0 +1,448 @@
+/*background-image: url('https://images.unsplash.com/photo-1546430498-05c7b929830e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');*/
+
+
+html, body {
+  background-image: url('https://images.unsplash.com/photo-1546430498-05c7b929830e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+  background-size: cover;
+  color: DarkSlateGrey;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10pt;
+}
+textarea {
+    padding: 30px;
+}
+.text {
+    
+    margin-top: 20px;
+    background: #333333;
+    border: 0.1em solid #ffffff;
+    width: 100%;
+    height: 600px;
+    font-size: 16px;
+    color: #ffffff;
+}
+/*.front{
+  margin-top: 20px;
+  border: 0.1em solid #ffffff;
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1546430498-05c7b929830e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+}*/
+.btn{
+    
+    padding: 0.55em 1.2em;
+    border: 0.1em solid #ffffff;
+    border-radius: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 20px;
+    height: 70px;
+    width: 300px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 210px;
+    text-align-last:center; 
+}
+form{
+  display:inline;
+}
+select{
+  display:inline;
+}
+.btn2{
+    margin-left: 60px;
+     
+    border: 0.1em solid #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 5px;
+    
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    height: 70px;
+    width: 300px;
+    margin-top: 30px;
+    
+}
+.buf{
+  font-size: 10px;
+}
+#buf{
+  font-size: 10px;
+}
+.btn:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.btn2:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.title{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80px;
+    /*position: fixed;  or absolute */
+    margin-left: 25%;
+    margin-top: 18%;
+    
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  color: black;
+  border: 1px solid #888;
+   /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+#closeModalBtn {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#modal_title{
+    font-size: 20px; 
+    margin: 0 auto;
+    
+}
+.text-line {
+    margin-top: 15px;
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    outline: none;
+    outline-style: none;
+    outline-offset: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
+    padding: 3px 10px;
+}
+#button_add{
+    
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+.button1 { 
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.button2 { 
+    width:100px;
+    margin-left: 10px;
+    padding: 0px;
+    background-color: rbga(0,0,0,1);
+    color: black;
+    height: 35px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    font-size: 18px;
+}
+.button1:hover {background-color: black; color:white;}
+.button2:hover{background-color: #e7e7e7;}
+#modal_footer{
+    color:#1E562D;
+    margin-bottom: 10px;
+    margin-top: 170px;
+    font-size: 12px;
+}
+.p2_title{
+
+  margin-top:30px;
+
+}
+#selector4{
+  background-color: white;
+  margin-left: 35px;
+  border: 2px solid #ccc;
+  border-radius: 0px;
+  width:120px;
+  height: 35px;
+  font-size: 15px;
+}
+#selector2{
+  background-color: white;
+  border: 2px solid #ccc;
+  margin-left: 25px;
+  border-radius: 0px;
+  width:120px;
+  height: 35px;
+  font-size: 15px;
+}
+#selector3{
+  background-color: white;
+  margin-left: 25px;
+  border: 2px solid #ccc;
+  border-radius: 0px;
+  width:120px;
+  height: 35px;
+  font-size: 15px;
+}
+#current-document-selector{
+  background-color: white;
+  margin-left: 30px;
+  border: 2px solid #ccc;
+  border-radius: 0px;
+  width:120px;
+  height: 35px;
+}
+#editor {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 100px;
+  border: 0.1em solid #ffffff;
+  width: 70%;
+  height: 650px;
+  
+}
+/* The switch - the box around the slider */
+.switch {
+  border:2px solid #ccc;
+  border-radius: 4px;
+  margin-left: 30px;
+  position: absolute;
+  display: inline-block;
+  width: 70px;
+  height: 36px;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  color: black;
+  padding-top:8px;
+  padding-left:6px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size:14px;
+  font-weight: bold;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 28px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #fff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}
+
+
+#facebook_icon{
+  font-size:47px;
+  color:#3b5998;
+  margin-right: 10px;
+}
+#github_icon{
+  font-size:47px;
+  color:#000;
+}
+#google_icon{
+  font-size:45px;
+  margin-right: 10px;
+}
+#file_icon{
+  display: block;
+  font-size:25px;
+  color:white;
+}
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.icon {
+  margin-top: 20px;
+  margin-left: 470px;
+}
+#sign_in{
+  margin-left: 470px;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navBtn{
+  position: relative;
+  z-index:2;
+  float:right;
+  margin: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  color:black;
+  font-size: 15px;
+  border: 0.1em solid black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.navBtn:hover{
+  color:white;
+  background-color: black;
+}
+#docment_name_input{
+    width:120px;
+    margin-left: 10px;
+    padding: 7px;
+    color: black;
+    height: 37px;
+    border: 4px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+#invite{
+
+  background-color: white;
+ 
+  border: 2px solid black;
+  border-radius: 2px;
+  padding:6px ;
+  width:80px;
+  height: 36px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  float: right;
+  margin-right: 30px;
+  
+  
+}
+#invite:hover{
+  background-color: black;
+  color: white;
+}
+#delete{
+  font-size: 16px;
+  color: black;
+}
+#delete:hover{
+  color: red;
+}
+.document_name{
+  margin-left: 50px;
+  padding: 14px;
+
+  background-color: #ccc;
+  border:  2px solid white;
+  border-radius:  2px;
+
+}
+.all{
+  z-index: 0;
+  margin-top: 35px;
+  margin-left: 216px;
+  margin-right: 216px;
+  border:2px solid white;
+  background-color: #ccc;
+  padding-bottom: 60px;
+}
+#MainContent {
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 28px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 700px;
+    height: 500px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
